@@ -1,7 +1,15 @@
+
+/*Shaodows: alrededor y sombra de texto*/
 .aroundow {
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .txtshade {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+
+/*Imagen de fondo*/
+.bluefondo {
+    background-image: url('fondo.webp');
 }
