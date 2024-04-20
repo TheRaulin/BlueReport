@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="styles.css">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="tailwind.js"></script>
+
+    </head>
+    <body
+        class="flex items-center flex-col bg-cover bg-center bg-no-repeat h-screen w-screen font-raleway"
+        style="background-image: url('fondo.png');">
+        <div>
+            <img class="w-32" src="logo.png" alt="logo the blue house">
+        </div>
+        <h1 class="text-3xl text-white txtshade">The Blue House
+            Hostal</h1>
+        <h2 class="text-2xl text-white txtshade">Reporte turno
+            recepcion</h2>
+        <div id="report-container"
+            class="p-6 mt-3 w-[85vw] bg-base bg-opacity-70 border border-black rounded-lg">
+            <section class="flex flex-col mb-3">
+                <label class="text-white aroundow" for>
+                    Turno Reportado: </label>
+                <select name id class="h-8 rounded-lg border-2 border-black">
+                    <option value>Seleccionar turno</option>
+                    <option value>Mañana</option>
+                    <option value>Tarde</option>
+                    <option value>Noche</option>
+                </select>
+            </section>
+            <section class="flex flex-col mb-3">
+                <label for class="text-white aroundow">
+                    Privadas ocupadas y huespedes:</label>
+                    <button class="h-8 rounded-lg bg-white border-2 border-black" >Seleccionar</button>
+            </section>
+            <section class="flex justify-center">
+                <button id="b-report" class="h-8 px-2 text-white bg-base rounded-lg border-2 border-black aroundow">
+                    Generar Reporte</button>
+            </section>
+        </div>
+
+        <!--Modales-->
+    </body>
+</html>
