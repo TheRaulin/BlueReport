@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const buttonReport = document.getElementById("b-report");
     const selectPrivate = document.getElementById("selectPrivate");
+    const savePrivate = document.getElementById("savePrivate");
     const prueba = document.getElementById("prueba");;
     
     //Modales
@@ -52,6 +53,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     selectPrivate.addEventListener('click', function() {
         modalPrivate.classList.remove('hidden');
+    });
+
+    savePrivate.addEventListener('click', function() {
+        modalPrivate.classList.add('hidden');
     });
 
     prueba.addEventListener('click', function() {

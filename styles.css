@@ -14,3 +14,7 @@
     background-image: url('fondo.webp');
 }
 
+input[type="date"] {
+    padding: 5px;
+    
+  }
