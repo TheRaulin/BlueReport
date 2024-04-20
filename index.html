@@ -12,7 +12,7 @@
         <script src="tailwind.js"></script>
 
     </head>
-    <body
+    <body id="body"
         class="flex items-center flex-col bg-cover bg-center bg-no-repeat h-screen w-screen font-raleway bluefondo">
         <div>
             <img class="w-32" src="logo.webp" alt="logo the blue house">
@@ -27,16 +27,16 @@
                 <label class="text-white aroundow" for>
                     Turno Reportado: </label>
                 <select name="turno" id="turno" class="h-8 rounded-lg border-2 border-black">
-                    <option value>Seleccionar turno</option>
-                    <option value>Mañana</option>
-                    <option value>Tarde</option>
-                    <option value>Noche</option>
+                    <option value="Seleccionar turno">Seleccionar turno</option>
+                    <option value="mañana">Mañana</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noche">Noche</option>
                 </select>
             </section>
             <section class="flex flex-col mb-3">
                 <label for class="text-white aroundow">
                     Privadas ocupadas y huespedes:</label>
-                    <button class="h-8 rounded-lg bg-white border-2 border-black" >Seleccionar</button>
+                    <button id="selectPrivate" class="h-8 rounded-lg bg-white border-2 border-black" >Seleccionar</button>
             </section>
             <section class="flex justify-center">
                 <button id="b-report" class="h-8 px-2 text-white bg-base rounded-lg border-2 border-black aroundow">
@@ -47,8 +47,34 @@
         <!--Modales-->
 
         <!--Privadas-->
-        <div>
-
+        <div id="modalPrivate" class="absolute w-screen h-screen bg-black bg-opacity-50">
+            <div class="w-full h-full flex justify-center items-center">
+                <div id="contentModal" class="w-[85vw] h-40 bg-white overflow-hidden border-2 border-black rounded-lg">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="w-full">
+                                <th class="w-1/3 border border-black border-collapse">Habitacion</th>
+                                <th class="w-1/3 border border-black border-collapse">Huespedes</th>
+                                <th class="w-1/3 border border-black border-collapse">Check-out</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alejandria</td>
+                                <td>
+                                    <label for="">1: <input type="radio"></label>
+                                    <label for="">2: <input type="radio"></label>
+                                </td>
+                                <td>
+                                    <input type="date" id="fecha" name="fecha" class="w-5">
+                                    <span id="fechaMostrada"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button id="prueba" onclick="mostrarFecha()">prueba</button>
+                </div>
+            </div>
         </div>
 
         <!--Modales-->
