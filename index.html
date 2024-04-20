@@ -36,7 +36,10 @@
             <section class="flex flex-col mb-3">
                 <label for class="text-white aroundow">
                     Privadas ocupadas y huespedes:</label>
-                    <button id="selectPrivate" class="h-8 rounded-lg bg-white border-2 border-black" >Seleccionar</button>
+                    <div class="w-full flex justify-center space-x-[2%]">
+                        <button id="selectPrivate" class="w-[48%] h-8 rounded-lg bg-white border-2 border-black" >Seleccionar</button>
+                        <button id="selectPrivate" class="w-[48%] h-8 rounded-lg bg-white border-2 border-black" >Sin ocupacion</button>
+                    </div>
             </section>
             <section class="flex justify-center">
                 <button id="b-report" class="h-8 px-2 mt-3 text-white bg-base rounded-lg border-2 border-black aroundow">
@@ -49,7 +52,7 @@
         <!--Privadas-->
         <div id="modalPrivate" class="absolute hidden w-screen h-screen bg-black bg-opacity-50">
             <div class="w-full h-full flex flex-col justify-center items-center">
-                <div id="contentModal" class="w-[90vw] bg-white overflow-hidden border-2 border-black rounded-lg">
+                <div id="contentModal" class="w-[92vw] bg-white overflow-hidden border-2 border-black rounded-lg">
                     <table class="w-full">
                         <thead>
                             <tr class="w-full bg-gray-600 text-gray-300">
@@ -60,50 +63,85 @@
                         </thead>
                         <tbody>
                             <tr class="bg-gray-300">
-                                <td class="border border-black text-center">Alejandria</td>
                                 <td class="border border-black text-center">
-                                    <label for="">1: <input type="radio"></label>
-                                    <label for="">2: <input type="radio"></label>
+                                    <div class="option mx-2 flex justify-between items-center">
+                                        <label for="">Alejandria</label>
+                                        <input type="checkbox">
+                                    </div>
+                                </td>
+                                <td class="border border-black text-center">
+                                    <div class="mx-4  flex justify-between items-center">
+                                        <label for="">1 <input type="radio" class="align-middle"></label>
+                                        <label for="">2 <input type="radio" class="align-middle"></label>
+                                    </div>
                                 </td>
                                 <td class="border border-black text-center text-center">
                                     <input type="date" id="fecha" name="fecha" class="bg-gray-300">
                                 </td>
                             </tr>
                             <tr class="bg-gray-300">
-                                <td class="border border-black text-center">Jacobo</td>
                                 <td class="border border-black text-center">
-                                    <label for="">1: <input type="radio"></label>
-                                    <label for="">2: <input type="radio"></label>
+                                    <div class="option mx-2 flex justify-between items-center">
+                                        <label for="">Jacobo</label>
+                                        <input type="checkbox">
+                                    </div>
+                                </td>
+                                <td class="border border-black text-center">
+                                    <div class="mx-4  flex justify-between items-center">
+                                        <label for="">1 <input type="radio" class="align-middle"></label>
+                                        <label for="">2 <input type="radio" class="align-middle"></label>
+                                    </div>
                                 </td>
                                 <td class="border border-black text-center text-center">
                                     <input type="date" id="fecha" name="fecha" class="bg-gray-300">
                                 </td>
                             </tr>
                             <tr class="bg-gray-300">
-                                <td class="border border-black text-center">Lourdes</td>
                                 <td class="border border-black text-center">
-                                    <label for="">1: <input type="radio"></label>
-                                    <label for="">2: <input type="radio"></label>
+                                    <div class="option mx-2 flex justify-between items-center">
+                                        <label for="">Lourdes</label>
+                                        <input type="checkbox">
+                                    </div>
+                                </td>
+                                <td class="border border-black text-center">
+                                    <div class="mx-4  flex justify-between items-center">
+                                        <label for="">1 <input type="radio" class="align-middle"></label>
+                                        <label for="">2 <input type="radio" class="align-middle"></label>
+                                    </div>
                                 </td>
                                 <td class="border border-black text-center text-center">
                                     <input type="date" id="fecha" name="fecha" class="bg-gray-300">
                                 </td>
                             </tr>
                             <tr class="bg-gray-300">
-                                <td class="border border-black text-center">Macedonia</td>
                                 <td class="border border-black text-center">
-                                    <label for="">1: <input type="radio"></label>
-                                    <label for="">2: <input type="radio"></label>
+                                    <div class="option mx-2 flex justify-between items-center">
+                                        <label for="">Macedonia</label>
+                                        <input type="checkbox">
+                                    </div>
+                                </td>
+                                <td class="border border-black text-center">
+                                    <div class="mx-4  flex justify-between items-center">
+                                        <label for="">1 <input type="radio" class="align-middle"></label>
+                                        <label for="">2 <input type="radio" class="align-middle"></label>
+                                    </div>
                                 </td>
                                 <td class="border border-black text-center text-center">
                                     <input type="date" id="fecha" name="fecha" class="bg-gray-300">
                                 </td>
                             </tr>
                             <tr class="bg-gray-300">
-                                <td class="border border-black text-center">Vita</td>
                                 <td class="border border-black text-center">
-                                    <label for="">1: <input type="radio"></label>
-                                    <label for="">2: <input type="radio"></label>
+                                    <div class="option mx-2 flex justify-between items-center">
+                                        <label for="">Vita</label>
+                                        <input type="checkbox">
+                                    </div>
+                                </td>
+                                <td class="border border-black text-center">
+                                    <div class="mx-4  flex justify-between items-center">
+                                        <label for="">1 <input type="radio" class="align-middle"></label>
+                                        <label for="">2 <input type="radio" class="align-middle"></label>
+                                    </div>
                                 </td>
                                 <td class="border border-black text-center text-center">
                                     <input type="date" id="fecha" name="fecha" class="bg-gray-300">
@@ -115,7 +153,6 @@
                 <button id="savePrivate" class="h-8 w-[35%] mt-3 bg-white border rounded-lg">Guardar</button>
             </div>
         </div>
-
         <!--Modales-->
   
 
