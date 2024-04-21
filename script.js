@@ -38,10 +38,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const buttonReport = document.getElementById("b-report");
     const selectPrivate = document.getElementById("selectPrivate");
     const savePrivate = document.getElementById("savePrivate");
+    const selectAlejandro = document.getElementById("selectAlejandro");;
+    const saveAlejandro = document.getElementById("saveAlejandro");
     const prueba = document.getElementById("prueba");;
     
     //Modales
     const modalPrivate = document.getElementById("modalPrivate");
+    const modalAlejandro = document.getElementById("modalAlejandro");
 
   
 
@@ -51,12 +54,21 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(selectedTurno);
     });
 
+    //Open-close Modales
     selectPrivate.addEventListener('click', function() {
         modalPrivate.classList.remove('hidden');
     });
 
     savePrivate.addEventListener('click', function() {
         modalPrivate.classList.add('hidden');
+    });
+    //Alejandro
+    selectAlejandro.addEventListener('click', function() {
+        modalAlejandro.classList.remove('hidden');
+    });
+
+    saveAlejandro.addEventListener('click', function() {
+        modalAlejandro.classList.add('hidden');
     });
 
     prueba.addEventListener('click', function() {
