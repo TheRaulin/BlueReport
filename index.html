@@ -13,41 +13,71 @@
 
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
-
     </head>
-    <body id="body"
-        class="flex items-center flex-col bg-cover bg-center bg-no-repeat h-screen w-screen font-raleway bluefondo">
-        <div>
-            <img class="w-32" src="logo.webp" alt="logo the blue house">
-        </div>
-        <h1 class="text-3xl text-white txtshade">The Blue House
-            Hostal</h1>
-        <h2 class="text-2xl text-white txtshade">Reporte turno
-            recepcion</h2>
-        <div id="report-container"
-            class="p-6 mt-3 w-[85vw] bg-base bg-opacity-70 border border-black rounded-lg">
-            <section class="flex flex-col mb-3">
-                <label class="text-white aroundow" for>
-                    Turno a reportar: </label>
-                <select name="turno" id="turno"
-                    class="h-8 rounded-lg border-2 border-black">
-                    <option value="Seleccionar turno">Seleccionar turno</option>
-                    <option class="bg-green-200" value="mañana">Mañana</option>
-                    <option class="bg-orange-300" value="tarde">Tarde</option>
-                    <option class="bg-red-500" value="noche">Noche</option>
-                </select>
-            </section>
-            <section class="flex flex-col mb-3">
-                <label for class="text-white aroundow">
-                    Privadas ocupadas y huespedes:</label>
-                <div class="w-full flex justify-center space-x-[2%]">
+    <body class="bg-cover bg-center bg-no-repeat h-auto w-screen font-raleway bluefondo">
+        <div
+            class="flex items-center flex-col">
+            <div>
+                <img class="w-32" src="logo.webp" alt="logo the blue house">
+            </div>
+            <!--Titulos-->
+            <h1 class="text-3xl text-white txtshade">The Blue House
+                Hostal</h1>
+            <h2 class="text-2xl text-white txtshade">Reporte turno
+                recepcion</h2>
+            <div id="report-container"
+                class="p-6 mt-3 w-[85vw] bg-base bg-opacity-70 border border-black rounded-lg">
+                <!--Turno-->
+                <section class="flex flex-col mb-3">
+                    <label class="text-white aroundow" for>
+                        Turno a reportar: </label>
+                    <select name="turno" id="turno"
+                        class="h-8 rounded-lg border-2 border-black">
+                        <option value="Seleccionar turno">Seleccionar
+                            turno</option>
+                        <option class="bg-green-200"
+                            value="mañana">Mañana</option>
+                        <option class="bg-orange-300"
+                            value="tarde">Tarde</option>
+                        <option class="bg-red-500" value="noche">Noche</option>
+                    </select>
+                </section>
+                <!--Privadas-->
+                <section class="flex flex-col mb-3">
+                    <label for class="text-white aroundow">
+                        Privadas ocupadas y huespedes:</label>
                     <button id="selectPrivate"
-                        class="w-[48%] h-8 rounded-lg bg-white border-2 border-black">Seleccionar</button>
+                        class=" h-8 rounded-lg bg-white border-2 border-black">Seleccionar</button>
+                </section>
+                <!--Alejandro-->
+                <section class="flex flex-col mb-3">
+                    <label for class="text-white aroundow">
+                        Alejandro: </label>
                     <button id="selectPrivate"
-                        class="w-[48%] h-8 rounded-lg bg-white border-2 border-black">Sin
-                        ocupacion</button>
-                </div>
-            </section>
+                        class=" h-8 rounded-lg bg-white border-2 border-black">Seleccionar</button>
+                </section>
+                <!--Filipo-->
+                <section class="flex flex-col mb-3">
+                    <label for class="text-white aroundow">
+                        Filipo: </label>
+                    <button id="selectPrivate"
+                        class=" h-8 rounded-lg bg-white border-2 border-black">Seleccionar</button>
+                </section>
+                <!--Olimpia-->
+                <section class="flex flex-col mb-3">
+                    <label for class="text-white aroundow">
+                        Olimpia: </label>
+                    <button id="selectPrivate"
+                        class=" h-8 rounded-lg bg-white border-2 border-black">Seleccionar</button>
+                </section>
+                <!--Greacia-->
+                <section class="flex flex-col mb-3">
+                    <label for class="text-white aroundow">
+                        Grecia: </label>
+                    <button id="selectPrivate"
+                        class=" h-8 rounded-lg bg-white border-2 border-black">Seleccionar</button>
+                </section>
+            </div>
             <section class="flex justify-center">
                 <button id="b-report"
                     class="h-8 px-2 mt-3 text-white bg-base rounded-lg border-2 border-black aroundow">
@@ -59,7 +89,7 @@
 
         <!--Privadas-->
         <div id="modalPrivate"
-            class="absolute w-screen h-screen bg-black bg-opacity-50">
+            class="absolute hidden w-screen h-screen bg-black bg-opacity-50">
             <div
                 class="w-full h-full flex flex-col justify-center items-center">
                 <div id="contentModal"
@@ -93,7 +123,8 @@
                                                 class="align-middle"></label>
                                     </div>
                                 </td>
-                                <td class="border border-black text-center text-center">
+                                <td
+                                    class="border border-black text-center text-center">
 
                                     <div class="relative max-w-sm w-[135px]">
                                         <div
@@ -133,7 +164,8 @@
                                                 class="align-middle"></label>
                                     </div>
                                 </td>
-                                <td class="border border-black text-center text-center">
+                                <td
+                                    class="border border-black text-center text-center">
                                     <div class="relative max-w-sm w-[135px]">
                                         <div
                                             class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
@@ -151,7 +183,7 @@
                                             class="cursor-pointer placeholder-black bg-gray-300 text-black text-sm rounded-lg block w-full ps-10 p-[10px]"
                                             placeholder="Select date"
                                             readonly>
-                                    </div>  
+                                    </div>
                                 </td>
                             </tr>
                             <tr class="bg-gray-300">
@@ -171,7 +203,8 @@
                                                 class="align-middle"></label>
                                     </div>
                                 </td>
-                                <td class="border border-black text-center text-center">
+                                <td
+                                    class="border border-black text-center text-center">
                                     <div class="relative max-w-sm w-[135px]">
                                         <div
                                             class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
@@ -209,7 +242,8 @@
                                                 class="align-middle"></label>
                                     </div>
                                 </td>
-                                <td class="border border-black text-center text-center">
+                                <td
+                                    class="border border-black text-center text-center">
                                     <div class="relative max-w-sm w-[135px]">
                                         <div
                                             class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
@@ -247,7 +281,8 @@
                                                 class="align-middle"></label>
                                     </div>
                                 </td>
-                                <td class="border border-black text-center text-center">
+                                <td
+                                    class="border border-black text-center text-center">
                                     <div class="relative max-w-sm w-[135px]">
                                         <div
                                             class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
@@ -266,16 +301,17 @@
                                             placeholder="Select date"
                                             readonly>
                                     </div>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button id="savePrivate"
+                        class="h-8 w-[35%] mt-3 bg-white border rounded-lg">Guardar</button>
                 </div>
-                <button id="savePrivate"
-                    class="h-8 w-[35%] mt-3 bg-white border rounded-lg">Guardar</button>
             </div>
-        </div>
-        <!--Modales-->
+            <!--Modales-->
 
+        </div>
     </body>
     <script src="script.js"></script>
 </html>
