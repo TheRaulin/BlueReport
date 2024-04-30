@@ -1,242 +1,259 @@
 document.addEventListener('DOMContentLoaded', function() {
-    //variables globales
-    let privadasOcupadas = 0;
+    let FilipoIn = 0;
 
-    //Alejandria elementos
-    const btAlejandria = document.getElementById("btAlejandria");
-    const trAlejandria = document.getElementById('trAlejandria');
-    const r1Alejandria = document.getElementById('r1Alejandria');
-    const r2Alejandria = document.getElementById('r2Alejandria');
-    const cbAlejandria = document.getElementById('cbAlejandria'); 
-    //Jacobo Elementos
-    const btJacobo = document.getElementById("btJacobo");
-    const trJacobo = document.getElementById('trJacobo');
-    const r1Jacobo = document.getElementById('r1Jacobo');
-    const r2Jacobo = document.getElementById('r2Jacobo');
-    const cbJacobo = document.getElementById('cbJacobo'); 
-    //Lourdes Elementos
-    const btLourdes = document.getElementById("btLourdes");
-    const trLourdes = document.getElementById('trLourdes');
-    const r1Lourdes = document.getElementById('r1Lourdes');
-    const r2Lourdes = document.getElementById('r2Lourdes');
-    const cbLourdes = document.getElementById('cbLourdes'); 
-    //Macedonia Elementos
-    const btMacedonia = document.getElementById("btMacedonia");
-    const trMacedonia = document.getElementById('trMacedonia');
-    const r1Macedonia = document.getElementById('r1Macedonia');
-    const r2Macedonia = document.getElementById('r2Macedonia');
-    const cbMacedonia = document.getElementById('cbMacedonia'); 
+    const bt1Filipo = document.getElementById("bt1Filipo");
+    const bt2Filipo = document.getElementById("bt2Filipo");
+    const bt3Filipo = document.getElementById("bt3Filipo");
+    const bt4Filipo = document.getElementById("bt4Filipo");
+    const bt5Filipo = document.getElementById("bt5Filipo");
+    const bt6Filipo = document.getElementById("bt6Filipo");
+    const bt7Filipo = document.getElementById("bt7Filipo");
+    const bt8Filipo = document.getElementById("bt8Filipo");
+    const bt9Filipo = document.getElementById("bt9Filipo");
+    const bt10Filipo = document.getElementById("bt10Filipo");
+    const bt11Filipo = document.getElementById("bt11Filipo");
+    const bt12Filipo = document.getElementById("bt12Filipo");
+    const bt13Filipo = document.getElementById("bt13Filipo");
+    const bt14Filipo = document.getElementById("bt14Filipo");
 
-    //Vita Elementos
-    const btVita = document.getElementById("btVita");
-    const trVita = document.getElementById('trVita');
-    const r1Vita = document.getElementById('r1Vita');
-    const r2Vita = document.getElementById('r2Vita'); 
-    const cbVita = document.getElementById('cbVita');  
+    //Cama 1 Filipo ---------------------------------------------------------------- 1
+    bt1Filipo.addEventListener('click', function() {
+        if(bt1Filipo.value == 0) {
+            FilipoIn += 1;
+            bt1Filipo.value = 1;
+            console.log(bt1Filipo.value)
+            bt1Filipo.classList.add('bg-in', 'text-white', 'border-inBorder');
+        } else if(bt1Filipo.value == 1){
+            bt1Filipo.value = 2;
+            bt1Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
+            bt1Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            console.log(bt1Filipo.value)
+        } else {
+            FilipoIn -= 1;
+            bt1Filipo.value = 0;
+            bt1Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');   
+            console.log(bt1Filipo.value)           
+        }
+    });  
+
+    //Cama 2 Filipo ---------------------------------------------------------------- 2
+    bt2Filipo.addEventListener('click', function() {
+        if(bt2Filipo.value == 0) {
+            FilipoIn += 1;
+            bt2Filipo.value = 1;
+            bt2Filipo.classList.add('bg-in', 'text-white', 'border-inBorder');
+        } else if(bt2Filipo.value == 1){
+            bt2Filipo.value = 2;
+            bt2Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
+            bt2Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+        } else {
+            FilipoIn -= 1;
+            bt2Filipo.value = 0;
+            bt2Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
+        }
+    });    
+
+    //Cama 3 Filipo ---------------------------------------------------------------- 3
+    bt3Filipo.addEventListener('click', function() {
+        if(bt3Filipo.value == 0) {
+            FilipoIn += 1;
+            bt3Filipo.value = 1;
+            bt3Filipo.classList.add('bg-in', 'text-white', 'border-inBorder');
+        } else if(bt3Filipo.value == 1){
+            bt3Filipo.value = 2;
+            bt3Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
+            bt3Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+        } else {
+            FilipoIn -= 1;
+            bt3Filipo.value = 0;
+            bt3Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
+        }
+    });  
     
-    //Alejandria Eventos ----------------------------------------------------------------
-    //inabilita el checkbox y radio 
-    if(btAlejandria.value == 0){
-        cbAlejandria.disabled = true;
-        r1Alejandria.disabled = true;
-        r2Alejandria.disabled = true;
-    }
-    btAlejandria.addEventListener('click', function() {
-        let valor = btAlejandria.value;
-        //evento del click del boton alejandria
-        if (valor=="0"){
-            privadasOcupadas += 1;
-            r2Alejandria.checked = true;
-            trAlejandria.classList.add('bg-in', 'text-white');
-            btAlejandria.value =1;
-            cbAlejandria.disabled = false;
-            r1Alejandria.disabled = false;
-            r2Alejandria.disabled = false;
+    //Cama 4 Filipo ---------------------------------------------------------------- 4
+    bt4Filipo.addEventListener('click', function() {
+        if(bt4Filipo.value == 0) {
+            FilipoIn += 1;
+            bt4Filipo.value = 1;
+            bt4Filipo.classList.add('bg-in', 'text-white', 'border-inBorder');
+        } else if(bt4Filipo.value == 1){
+            bt4Filipo.value = 2;
+            bt4Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
+            bt4Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
         } else {
-            privadasOcupadas -= 1;
-            r2Alejandria.checked = false;
-            r1Alejandria.checked = false;
-            trAlejandria.classList.remove('bg-in', 'text-white');
-            btAlejandria.value = 0;
-            cbAlejandria.disabled = true;
-            r1Alejandria.disabled = true;
-            r2Alejandria.disabled = true;
-            if(cbAlejandria.checked){
-                cbAlejandria.checked = false;
-                trAlejandria.classList.remove('bg-out', 'text-white');
-            }
-        }   
-    }); 
-    //evento del checkbox de alejndria
-    cbAlejandria.addEventListener('change', function() {
-        if (this.checked) {
-            trAlejandria.classList.add('bg-out');
-        } else {
-            trAlejandria.classList.remove('bg-out');
+            FilipoIn -= 1;
+            bt4Filipo.value = 0;
+            bt4Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
-    });
+    }); 
+
+    //Cama 5 Filipo ---------------------------------------------------------------- 5
+    bt5Filipo.addEventListener('click', function() {
+        if(bt5Filipo.value == 0) {
+            FilipoIn += 1;
+            bt5Filipo.value = 1;
+            bt5Filipo.classList.add('bg-in', 'text-white', 'border-inBorder');
+        } else if(bt5Filipo.value == 1){
+            bt5Filipo.value = 2;
+            bt5Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
+            bt5Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+        } else {
+            FilipoIn -= 1;
+            bt5Filipo.value = 0;
+            bt5Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
+        }
+    });     
+
+    //Cama 6 Filipo ---------------------------------------------------------------- 6
+    bt6Filipo.addEventListener('click', function() {
+        if(bt6Filipo.value == 0) {
+            FilipoIn += 1;
+            bt6Filipo.value = 1;
+            bt6Filipo.classList.add('bg-in', 'text-white', 'border-inBorder');
+        } else if(bt6Filipo.value == 1){
+            bt6Filipo.value = 2;
+            bt6Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
+            bt6Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+        } else {
+            FilipoIn -= 1;
+            bt6Filipo.value = 0;
+            bt6Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
+        }
+    });  
     
-    //Eventos Jacobo --------------------------------------------------------------------
-    //inabilita el checkbox y radio 
-    if(btJacobo.value == 0){
-        cbJacobo.disabled = true;
-        r1Jacobo.disabled = true;
-        r2Jacobo.disabled = true;
-    }
-    btJacobo.addEventListener('click', function() {
-        let valor = btJacobo.value;
-        if (valor=="0"){
-            privadasOcupadas += 1;
-            r2Jacobo.checked = true;
-            trJacobo.classList.add('bg-in', 'text-white');
-            btJacobo.value =1;
-            cbJacobo.disabled = false;
-            r1Jacobo.disabled = false;
-            r2Jacobo.disabled = false;
+    //Cama 7 Filipo ---------------------------------------------------------------- 7
+    bt7Filipo.addEventListener('click', function() {
+        if(bt7Filipo.value == 0) {
+            FilipoIn += 1;
+            bt7Filipo.value = 1;
+            bt7Filipo.classList.add('bg-in', 'text-white', 'border-inBorder');
+        } else if(bt7Filipo.value == 1){
+            bt7Filipo.value = 2;
+            bt7Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
+            bt7Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
         } else {
-            privadasOcupadas -= 1;
-            r2Jacobo.checked = false;
-            r1Jacobo.checked = false;
-            trJacobo.classList.remove('bg-in', 'text-white');
-            btJacobo.value = 0;
-            cbJacobo.disabled = true;
-            r1Jacobo.disabled = true;
-            r2Jacobo.disabled = true;
-            if(cbJacobo.checked){
-                cbJacobo.checked = false;
-                trJacobo.classList.remove('bg-out', 'text-white');
-            }
-        }   
-    }); 
-    //evento del checkbox de Jacobo
-    cbJacobo.addEventListener('change', function() {
-        if (this.checked) {
-            trJacobo.classList.add('bg-out');
-        } else {
-            trJacobo.classList.remove('bg-out');
+            FilipoIn -= 1;
+            bt7Filipo.value = 0;
+            bt7Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
-    });
-
-    //Eventos Lourdes --------------------------------------------------------------------
-    //inabilita el checkbox y radio 
-    if(btLourdes.value == 0){
-        cbLourdes.disabled = true;
-        r1Lourdes.disabled = true;
-        r2Lourdes.disabled = true;
-    }
-    btLourdes.addEventListener('click', function() {
-        let valor = btLourdes.value;
-        if (valor=="0"){
-            privadasOcupadas += 1;
-            r2Lourdes.checked = true;
-            trLourdes.classList.add('bg-in', 'text-white');
-            btLourdes.value =1;
-            cbLourdes.disabled = false;
-            r1Lourdes.disabled = false;
-            r2Lourdes.disabled = false;
+    });  
+    
+    //Cama 8 Filipo ---------------------------------------------------------------- 8
+    bt8Filipo.addEventListener('click', function() {
+        if(bt8Filipo.value == 0) {
+            FilipoIn += 1;
+            bt8Filipo.value = 1;
+            bt8Filipo.classList.add('bg-in', 'text-white', 'border-inBorder');
+        } else if(bt8Filipo.value == 1){
+            bt8Filipo.value = 2;
+            bt8Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
+            bt8Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
         } else {
-            privadasOcupadas -= 1;
-            r2Lourdes.checked = false;
-            r1Lourdes.checked = false;
-            trLourdes.classList.remove('bg-in', 'text-white');
-            btLourdes.value = 0;
-            cbLourdes.disabled = true;
-            r1Lourdes.disabled = true;
-            r2Lourdes.disabled = true;
-            if(cbLourdes.checked){
-                cbLourdes.checked = false;
-                trLourdes.classList.remove('bg-out', 'text-white');
-            }
-        }   
-    }); 
-    //evento del checkbox de Lourdes
-    cbLourdes.addEventListener('change', function() {
-        if (this.checked) {
-            trLourdes.classList.add('bg-out');
-        } else {
-            trLourdes.classList.remove('bg-out');
+            FilipoIn -= 1;
+            bt8Filipo.value = 0;
+            bt8Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
-    });
-
-    //Eventos Macedonia --------------------------------------------------------------------
-    //inabilita el checkbox y radio 
-    if(btMacedonia.value == 0){
-        cbMacedonia.disabled = true;
-        r1Macedonia.disabled = true;
-        r2Macedonia.disabled = true;
-    }
-    btMacedonia.addEventListener('click', function() {
-        let valor = btMacedonia.value;
-        if (valor=="0"){
-            privadasOcupadas += 1;
-            r2Macedonia.checked = true;
-            trMacedonia.classList.add('bg-in', 'text-white');
-            btMacedonia.value =1;
-            cbMacedonia.disabled = false;
-            r1Macedonia.disabled = false;
-            r2Macedonia.disabled = false;
-        } else {
-            privadasOcupadas -= 1;
-            r2Macedonia.checked = false;
-            r1Macedonia.checked = false;
-            trMacedonia.classList.remove('bg-in', 'text-white');
-            btMacedonia.value = 0;
-            cbMacedonia.disabled = true;
-            r1Macedonia.disabled = true;
-            r2Macedonia.disabled = true;
-            if(cbMacedonia.checked){
-                cbMacedonia.checked = false;
-                trMacedonia.classList.remove('bg-out', 'text-white');
-            }
-        }   
     }); 
-    //evento del checkbox de Macedonia
-    cbMacedonia.addEventListener('change', function() {
-        if (this.checked) {
-            trMacedonia.classList.add('bg-out');
-        } else {
-            trMacedonia.classList.remove('bg-out');
-        }
-    });
 
-    //Eventos Vita --------------------------------------------------------------------
-    //inabilita el checkbox y radio 
-    if(btVita.value == 0){
-        cbVita.disabled = true;
-        r1Vita.disabled = true;
-        r2Vita.disabled = true;
-    }
-    btVita.addEventListener('click', function() {
-        let valor = btVita.value;
-        if (valor=="0"){
-            privadasOcupadas += 1;
-            r2Vita.checked = true;
-            trVita.classList.add('bg-in', 'text-white');
-            btVita.value =1;
-            cbVita.disabled = false;
-            r1Vita.disabled = false;
-            r2Vita.disabled = false;
+    //Cama 9 Filipo ---------------------------------------------------------------- 9
+    bt9Filipo.addEventListener('click', function() {
+        if(bt9Filipo.value == 0) {
+            FilipoIn += 1;
+            bt9Filipo.value = 1;
+            bt9Filipo.classList.add('bg-in', 'text-white', 'border-inBorder');
+        } else if(bt9Filipo.value == 1){
+            bt9Filipo.value = 2;
+            bt9Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
+            bt9Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
         } else {
-            privadasOcupadas -= 1;
-            r2Vita.checked = false;
-            r1Vita.checked = false;
-            trVita.classList.remove('bg-in', 'text-white');
-            btVita.value = 0;
-            cbVita.disabled = true;
-            r1Vita.disabled = true;
-            r2Vita.disabled = true;
-            if(cbVita.checked){
-                cbVita.checked = false;
-                trVita.classList.remove('bg-out', 'text-white');
-            }
-        }   
-    }); 
-    //evento del checkbox de Vita
-    cbVita.addEventListener('change', function() {
-        if (this.checked) {
-            trVita.classList.add('bg-out');
-        } else {
-            trVita.classList.remove('bg-out');
+            FilipoIn -= 1;
+            bt9Filipo.value = 0;
+            bt9Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
     });   
+    
+    //Cama 10 Filipo ---------------------------------------------------------------- 10
+    bt10Filipo.addEventListener('click', function() {
+        if(bt10Filipo.value == 0) {
+            FilipoIn += 1;
+            bt10Filipo.value = 1;
+            bt10Filipo.classList.add('bg-in', 'text-white', 'border-inBorder');
+        } else if(bt10Filipo.value == 1){
+            bt10Filipo.value = 2;
+            bt10Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
+            bt10Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+        } else {
+            FilipoIn -= 1;
+            bt10Filipo.value = 0;
+            bt10Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
+        }
+    });      
+
+    //Cama 11 Filipo ---------------------------------------------------------------- 11
+    bt11Filipo.addEventListener('click', function() {
+        if(bt11Filipo.value == 0) {
+            FilipoIn += 1;
+            bt11Filipo.value = 1;
+            bt11Filipo.classList.add('bg-in', 'text-white', 'border-inBorder');
+        } else if(bt11Filipo.value == 1){
+            bt11Filipo.value = 2;
+            bt11Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
+            bt11Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+        } else {
+            FilipoIn -= 1;
+            bt11Filipo.value = 0;
+            bt11Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
+        }
+    });  
+    
+    //Cama 12 Filipo ---------------------------------------------------------------- 12
+    bt12Filipo.addEventListener('click', function() {
+        if(bt12Filipo.value == 0) {
+            FilipoIn += 1;
+            bt12Filipo.value = 1;
+            bt12Filipo.classList.add('bg-in', 'text-white', 'border-inBorder');
+        } else if(bt12Filipo.value == 1){
+            bt12Filipo.value = 2;
+            bt12Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
+            bt12Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+        } else {
+            FilipoIn -= 1;
+            bt12Filipo.value = 0;
+            bt12Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
+        }
+    });  
+    
+    //Cama 13 Filipo ---------------------------------------------------------------- 12
+    bt13Filipo.addEventListener('click', function() {
+        if(bt13Filipo.value == 0) {
+            FilipoIn += 1;
+            bt13Filipo.value = 1;
+            bt13Filipo.classList.add('bg-in', 'text-white', 'border-inBorder');
+        } else if(bt13Filipo.value == 1){
+            bt13Filipo.value = 2;
+            bt13Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
+            bt13Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+        } else {
+            FilipoIn -= 1;
+            bt13Filipo.value = 0;
+            bt13Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
+        }
+    }); 
+    
+    //Cama 14 Filipo ---------------------------------------------------------------- 12
+    bt14Filipo.addEventListener('click', function() {
+        if(bt14Filipo.value == 0) {
+            FilipoIn += 1;
+            bt14Filipo.value = 1;
+            bt14Filipo.classList.add('bg-in', 'text-white', 'border-inBorder');
+        } else if(bt14Filipo.value == 1){
+            bt14Filipo.value = 2;
+            bt14Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
+            bt14Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+        } else {
+            FilipoIn -= 1;
+            bt14Filipo.value = 0;
+            bt14Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
+        }
+    });    
 });
