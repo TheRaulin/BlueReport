@@ -9,6 +9,7 @@ tailwind.config = {
           base: '#0C79BD',
           in: '#107667',
           out: '#833083',
+          inBorder: '#FF9900',
         }, 
       }
     }
