@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertir Div a Imagen</title>
+    <style>
+        #content {
+            border: 2px solid #333;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            background-color: #f9f9f9;
+        }
+
+        #convertButton {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <img src="logo.webp" alt="">
+    </div>
+    <button id="convertButton">Convertir a Imagen y Copiar</button>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script>
+        document.getElementById('convertButton').addEventListener('click', function() {
+            html2canvas(document.getElementById('content')).then(function(canvas) {
+                canvas.toBlob(function(blob) {
+                    navigator.clipboard.write([
+                        new ClipboardItem({
+                            'image/png': blob
+                        })
+                    ]).then(function() {
+                        console.log('La imagen se ha copiado al portapapeles.');
+                    }).catch(function(error) {
+                        console.error('Error al copiar la imagen:', error);
+                    });
+                }, 'image/png');
+            });
+        });
+    </script>
+</body>
+<div
+    class="relative max-w-sm w-[135px]">
+    <div
+        class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+        <svg
+            id="svgJacobo"
+            class="w-4 h-4 text-gray-600"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20">
+            <path
+                d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+        </svg>
+    </div>
+    <input datepicker type="text"
+        id="dpJacobo"
+        class="cursor-pointer placeholder-black bg-gray-300 text-white text-sm rounded-lg block w-full ps-10 p-[10px]"
+        placeholder="Select date"
+        readonly>
+</div>
+</html>
+
+

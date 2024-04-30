@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
 
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="Styles/index.css">
+        <link rel="stylesheet" href="Styles/styles.css">
 
         <script src="https://cdn.tailwindcss.com"></script>
-        <script src="tailwind.js"></script>
+        <script src="Styles/tailwind.js"></script>
 
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
@@ -19,7 +19,7 @@
         <div
             class="flex items-center flex-col">
             <div>
-                <img class="w-32" src="logo.webp" alt="logo the blue house">
+                <img class="w-32" src="Styles/Images/logo.webp" alt="logo the blue house">
             </div>
             <!--Titulos-->
             <h1 class="text-3xl text-white txtshade">The Blue House
@@ -28,21 +28,7 @@
                 recepcion</h2>
             <div id="report-container"
                 class="p-6 mt-3 w-[85vw] bg-base bg-opacity-70 border border-black rounded-lg">
-                <!--Turno-->
-                <section class="flex flex-col mb-3">
-                    <label class="text-white aroundow" for>
-                        Turno a reportar: </label>
-                    <select name="turno" id="turno"
-                        class="h-8 rounded-lg border-2 border-black">
-                        <option value="Seleccionar turno">Seleccionar
-                            turno</option>
-                        <option class="bg-green-200"
-                            value="mañana">Mañana</option>
-                        <option class="bg-orange-300"
-                            value="tarde">Tarde</option>
-                        <option class="bg-red-500" value="noche">Noche</option>
-                    </select>
-                </section>
+
                 <!--Privadas-->
                 <section class="flex flex-col mb-3">
                     <label for class="text-white aroundow">
@@ -104,336 +90,284 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="bg-gray-300">
+                                <tr id="trAlejandria" class="bg-gray-300">
                                     <td class="border border-black text-center">
                                         <div
                                             class="option mx-2 flex justify-between items-center">
-                                            <label for>Alejandria</label>
-                                            <input type="checkbox">
+                                            <button value="0" id="btAlejandria" class="w-full h-14">Alejandria</button>
                                         </div>
                                     </td>
                                     <td class="border border-black text-center">
                                         <div
                                             class="mx-4  flex justify-between items-center">
-                                            <label for>1 <input type="radio"
+                                            <label for="r1Alejandria">1 <input id="r1Alejandria" name="paxAlejandria" type="radio"
                                                     class="align-middle"></label>
-                                            <label for>2 <input type="radio"
+                                            <label for="r2Alejandria">2 <input id="r2Alejandria" name="paxAlejandria" type="radio"
                                                     class="align-middle"></label>
                                         </div>
                                     </td>
                                     <td
                                         class="border border-black text-center text-center">
-
-                                        <div
-                                            class="relative max-w-sm w-[135px]">
-                                            <div
-                                                class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                                                <svg
-                                                    class="w-4 h-4 text-gray-600"
-                                                    aria-hidden="true"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor"
-                                                    viewBox="0 0 20 20">
-                                                    <path
-                                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                                                </svg>
-                                            </div>
-                                            <input datepicker type="text"
-                                                class="cursor-pointer placeholder-black bg-gray-300 text-black text-sm rounded-lg block w-full ps-10 p-[10px]"
-                                                placeholder="Select date"
-                                                readonly>
-                                        </div>
-
+                                        <input id="cbAlejandria" type="checkbox" class="align-middle">
                                     </td>
                                 </tr>
-                                <tr class="bg-gray-300">
+                                <tr id="trJacobo" class="bg-gray-300">
                                     <td class="border border-black text-center">
                                         <div
                                             class="option mx-2 flex justify-between items-center">
-                                            <label for>Jacobo</label>
-                                            <input type="checkbox">
+                                            <button value="0" id="btJacobo" class="w-full h-14">Jacobo</button>
                                         </div>
                                     </td>
                                     <td class="border border-black text-center">
                                         <div
                                             class="mx-4  flex justify-between items-center">
-                                            <label for>1 <input type="radio"
+                                            <label for="r1Jacobo">1 <input name="paxJacobo" id="r1Jacobo" type="radio"
                                                     class="align-middle"></label>
-                                            <label for>2 <input type="radio"
+                                            <label for="r2Jacobo">2 <input name="paxJacobo" id="r2Jacobo" type="radio"
                                                     class="align-middle"></label>
                                         </div>
                                     </td>
                                     <td
                                         class="border border-black text-center text-center">
-                                        <div
-                                            class="relative max-w-sm w-[135px]">
-                                            <div
-                                                class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                                                <svg
-                                                    class="w-4 h-4 text-gray-600"
-                                                    aria-hidden="true"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor"
-                                                    viewBox="0 0 20 20">
-                                                    <path
-                                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                                                </svg>
-                                            </div>
-                                            <input datepicker type="text"
-                                                class="cursor-pointer placeholder-black bg-gray-300 text-black text-sm rounded-lg block w-full ps-10 p-[10px]"
-                                                placeholder="Select date"
-                                                readonly>
-                                        </div>
+                                        <input id="cbJacobo" type="checkbox" class="align-middle">
                                     </td>
                                 </tr>
-                                <tr class="bg-gray-300">
+                                <tr id="trLourdes" class="bg-gray-300">
                                     <td class="border border-black text-center">
                                         <div
                                             class="option mx-2 flex justify-between items-center">
-                                            <label for>Lourdes</label>
-                                            <input type="checkbox">
+                                            <button value="0" id="btLourdes" class="w-full h-14">Lourdes</button>
                                         </div>
                                     </td>
                                     <td class="border border-black text-center">
                                         <div
                                             class="mx-4  flex justify-between items-center">
-                                            <label for>1 <input type="radio"
+                                            <label for>1 <input name="paxLourdes" id="r1Lourdes" type="radio"
                                                     class="align-middle"></label>
-                                            <label for>2 <input type="radio"
+                                            <label for>2 <input name="paxLourdes" id="r2Lourdes" type="radio"
                                                     class="align-middle"></label>
                                         </div>
                                     </td>
                                     <td
                                         class="border border-black text-center text-center">
-                                        <div
-                                            class="relative max-w-sm w-[135px]">
-                                            <div
-                                                class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                                                <svg
-                                                    class="w-4 h-4 text-gray-600"
-                                                    aria-hidden="true"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor"
-                                                    viewBox="0 0 20 20">
-                                                    <path
-                                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                                                </svg>
-                                            </div>
-                                            <input datepicker type="text"
-                                                class="cursor-pointer placeholder-black bg-gray-300 text-black text-sm rounded-lg block w-full ps-10 p-[10px]"
-                                                placeholder="Select date"
-                                                readonly>
-                                        </div>
+                                        <input id="cbLourdes" type="checkbox" class="align-middle">
                                     </td>
                                 </tr>
-                                <tr class="bg-gray-300">
+                                <tr id="trMacedonia" class="bg-gray-300">
                                     <td class="border border-black text-center">
                                         <div
                                             class="option mx-2 flex justify-between items-center">
-                                            <label for>Macedonia</label>
-                                            <input type="checkbox">
+                                            <button value="0" id="btMacedonia" class="w-full h-14">Macedonia</button>
                                         </div>
                                     </td>
                                     <td class="border border-black text-center">
                                         <div
                                             class="mx-4  flex justify-between items-center">
-                                            <label for>1 <input type="radio"
+                                            <label for>1 <input name="paxMacedonia" id="r1Macedonia" type="radio"
                                                     class="align-middle"></label>
-                                            <label for>2 <input type="radio"
+                                            <label for>2 <input name="paxMacedonia" id="r2Macedonia" type="radio"
                                                     class="align-middle"></label>
                                         </div>
                                     </td>
                                     <td
                                         class="border border-black text-center text-center">
-                                        <div
-                                            class="relative max-w-sm w-[135px]">
-                                            <div
-                                                class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                                                <svg
-                                                    class="w-4 h-4 text-gray-600"
-                                                    aria-hidden="true"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor"
-                                                    viewBox="0 0 20 20">
-                                                    <path
-                                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                                                </svg>
-                                            </div>
-                                            <input datepicker type="text"
-                                                class="cursor-pointer placeholder-black bg-gray-300 text-black text-sm rounded-lg block w-full ps-10 p-[10px]"
-                                                placeholder="Select date"
-                                                readonly>
-                                        </div>
+                                        <input id="cbMacedonia" type="checkbox" class="align-middle">
                                     </td>
                                 </tr>
-                                <tr class="bg-gray-300">
+                                <tr id="trVita" class="bg-gray-300">
                                     <td class="border border-black text-center">
                                         <div
                                             class="option mx-2 flex justify-between items-center">
-                                            <label for>Vita</label>
-                                            <input type="checkbox">
+                                            <button value="0" id="btVita" class="w-full h-14">Vita</button>
                                         </div>
                                     </td>
                                     <td class="border border-black text-center">
                                         <div
                                             class="mx-4  flex justify-between items-center">
-                                            <label for>1 <input type="radio"
+                                            <label for>1 <input name="paxVita" id="r1Vita" type="radio"
                                                     class="align-middle"></label>
-                                            <label for>2 <input type="radio"
+                                            <label for>2 <input name="paxVita" id="r2Vita" type="radio"
                                                     class="align-middle"></label>
                                         </div>
                                     </td>
                                     <td
                                         class="border border-black text-center text-center">
-                                        <div
-                                            class="relative max-w-sm w-[135px]">
-                                            <div
-                                                class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                                                <svg
-                                                    class="w-4 h-4 text-gray-600"
-                                                    aria-hidden="true"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor"
-                                                    viewBox="0 0 20 20">
-                                                    <path
-                                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                                                </svg>
-                                            </div>
-                                            <input datepicker type="text"
-                                                class="cursor-pointer placeholder-black bg-gray-300 text-black text-sm rounded-lg block w-full ps-10 p-[10px]"
-                                                placeholder="Select date"
-                                                readonly>
-                                        </div>
+                                            <input id="cbVita" type="checkbox" class="align-middle">
+                                    </td>        
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <button id="savePrivate"
-                            class="h-8 w-[35%] mt-3 bg-white border rounded-lg">Guardar</button>
+                            class="h-10 w-[35%] mt-3 bg-white border rounded-lg">Guardar</button>
                     </div>
                 </div>
 
-            <!--Alejandro-->
-            <div id="modalAlejandro"
-                class="absolute hidden w-screen h-screen bg-black bg-opacity-50">
-                <div
-                    class="w-full h-full flex flex-col justify-center items-center">
-                    <div id="contentModal"
-                        class="w-[92vw] bg-white p-3 overflow-hidden border-2 border-black rounded-lg">
-                        <p class="text-center mt-3">Alejandro</p>
-                        <section class="Habitaciones">
-                            <div class="flex justify-around mt-6">
-                                <button id="aleBed1" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
-                                <button id="aleBed2" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
-                                <button id="aleBed3" id="aleBed1" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
-                                <button id="aleBed4" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">4</button>
-                                <button id="aleBed5" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">5</button>
-                                <button id="aleBed6"  class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg" >6</button>
-                                <button id="aleBed7" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">7</button>
-                            </div>
-                            <div class="flex justify-around my-6">
-                                <button id="aleBed8" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">8</button>
-                                <button id="aleBed9" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">9</button>
-                                <button id="aleBed10" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">10</button>
-                                <button id="aleBed11" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">11</button>
-                                <button id="aleBed12" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">12</button>
-                                <button id="aleBed13" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">13</button>
-                                <button id="aleBed14" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">14</button>
-                            </div>
-                        </section>
+                <!--Alejandro-->
+                <div id="modalAlejandro"
+                    class="absolute hidden w-screen h-screen bg-black bg-opacity-50">
+                    <div
+                        class="w-full h-full flex flex-col justify-center items-center">
+                        <div id="contentModal"
+                            class="w-[92vw] bg-white p-3 overflow-hidden border-2 border-black rounded-lg">
+                            <p class="text-center mt-3">Alejandro</p>
+                            <section class="Habitaciones">
+                                <div class="flex justify-around mt-6">
+                                    <button id="aleBed1"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
+                                    <button id="aleBed2"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
+                                    <button id="aleBed3" id="aleBed1"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
+                                    <button id="aleBed4"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">4</button>
+                                    <button id="aleBed5"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">5</button>
+                                    <button id="aleBed6"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">6</button>
+                                    <button id="aleBed7"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">7</button>
+                                </div>
+                                <div class="flex justify-around my-6">
+                                    <button id="aleBed8"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">8</button>
+                                    <button id="aleBed9"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">9</button>
+                                    <button id="aleBed10"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">10</button>
+                                    <button id="aleBed11"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">11</button>
+                                    <button id="aleBed12"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">12</button>
+                                    <button id="aleBed13"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">13</button>
+                                    <button id="aleBed14"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">14</button>
+                                </div>
+                            </section>
                         </div>
                         <button id="saveAlejandro"
-                            class="h-8 w-[35%] mt-3 bg-white border rounded-lg">Guardar</button>
+                            class="h-10 w-[35%] mt-3 bg-white border rounded-lg">Guardar</button>
                     </div>
-            </div>
-            <!--Filipo-->
-            <div id="modalFilipo"
-                class="absolute hidden w-screen h-screen bg-black bg-opacity-50">
-                <div
-                    class="w-full h-full flex flex-col justify-center items-center">
-                    <div id="contentModal"
-                        class="w-[92vw] bg-white p-3 overflow-hidden border-2 border-black rounded-lg">
-                        <p class="text-center mt-3">Filipo</p>
-                        <section class="Habitaciones">
-                            <div class="flex justify-around mt-6">
-                                <button id="filipoBed1" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
-                                <button id="filipoBed2" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
-                                <button id="filipoBed3" id="aleBed1" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
-                                <button id="filipoBed4" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">4</button>
-                                <button id="filipoBed5" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">5</button>
-                                <button id="filipoBed6"  class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg" >6</button>
-                                <button id="filipoBed7" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">7</button>
-                            </div>
-                            <div class="flex justify-around my-6">
-                                <button id="filipoBed8" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">8</button>
-                                <button id="filipoBed9" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">9</button>
-                                <button id="filipoBed10" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">10</button>
-                                <button id="filipoBed11" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">11</button>
-                                <button id="filipoBed12" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">12</button>
-                                <button id="filipoBed13" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">13</button>
-                                <button id="filipoBed14" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">14</button>
-                            </div>
-                        </section>
+                </div>
+                <!--Filipo-->
+                <div id="modalFilipo"
+                    class="absolute hidden w-screen h-screen bg-black bg-opacity-50">
+                    <div
+                        class="w-full h-full flex flex-col justify-center items-center">
+                        <div id="contentModal"
+                            class="w-[92vw] bg-white p-3 overflow-hidden border-2 border-black rounded-lg">
+                            <p class="text-center mt-3">Filipo</p>
+                            <section class="Habitaciones">
+                                <div class="flex justify-around mt-6">
+                                    <button id="filipoBed1"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
+                                    <button id="filipoBed2"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
+                                    <button id="filipoBed3" id="aleBed1"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
+                                    <button id="filipoBed4"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">4</button>
+                                    <button id="filipoBed5"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">5</button>
+                                    <button id="filipoBed6"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">6</button>
+                                    <button id="filipoBed7"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">7</button>
+                                </div>
+                                <div class="flex justify-around my-6">
+                                    <button id="filipoBed8"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">8</button>
+                                    <button id="filipoBed9"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">9</button>
+                                    <button id="filipoBed10"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">10</button>
+                                    <button id="filipoBed11"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">11</button>
+                                    <button id="filipoBed12"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">12</button>
+                                    <button id="filipoBed13"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">13</button>
+                                    <button id="filipoBed14"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">14</button>
+                                </div>
+                            </section>
                         </div>
                         <button id="saveFilipo"
                             class="h-8 w-[35%] mt-3 bg-white border rounded-lg">Guardar</button>
                     </div>
-            </div>
-            <!--Olimpia-->
-            <div id="modalOlimpia"
-                class="absolute hidden w-screen h-screen bg-black bg-opacity-50">
-                <div
-                    class="w-full h-full flex flex-col justify-center items-center">
-                    <div id="contentModal"
-                        class="w-[92vw] bg-white p-3 overflow-hidden border-2 border-black rounded-lg">
-                        <p class="text-center mt-3">Olimpia</p>
-                        <section class="Habitaciones">
-                            <div class="flex justify-around my-6">
-                                <button id="olimpiaBed1" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
-                                <button id="olimpiad2" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
-                                <button id="olimpiaBed3" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
-                                <button id="olimpiaBed4" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">4</button>
-                                <button id="olimpiaBed5" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">5</button>
-                                <button id="olimpiaBed6" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg" >6</button>
-                            </div>
-                        </section>
+                </div>
+                <!--Olimpia-->
+                <div id="modalOlimpia"
+                    class="absolute hidden w-screen h-screen bg-black bg-opacity-50">
+                    <div
+                        class="w-full h-full flex flex-col justify-center items-center">
+                        <div id="contentModal"
+                            class="w-[92vw] bg-white p-3 overflow-hidden border-2 border-black rounded-lg">
+                            <p class="text-center mt-3">Olimpia</p>
+                            <section class="Habitaciones">
+                                <div class="flex justify-around my-6">
+                                    <button id="olimpiaBed1"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
+                                    <button id="olimpiad2"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
+                                    <button id="olimpiaBed3"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
+                                    <button id="olimpiaBed4"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">4</button>
+                                    <button id="olimpiaBed5"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">5</button>
+                                    <button id="olimpiaBed6"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">6</button>
+                                </div>
+                            </section>
                         </div>
                         <button id="saveOlimpia"
                             class="h-8 w-[35%] mt-3 bg-white border rounded-lg">Guardar</button>
                     </div>
-            </div>
-            <!--Grecia-->
-            <div id="modalGrecia"
-                class="absolute hidden w-screen h-screen bg-black bg-opacity-50">
-                <div
-                    class="w-full h-full flex flex-col justify-center items-center">
-                    <div id="contentModal"
-                        class="w-[92vw] bg-white p-3 overflow-hidden border-2 border-black rounded-lg">
-                        <p class="text-center mt-3">Grecia</p>
-                        <section class="Habitaciones">
-                            <div class="flex justify-around my-6">
-                                <button id="olimpiaBed1" class="w-[100px] h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
-                                <button id="olimpiaBed2" class="w-[100px] h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
-                                <button id="olimpiaBed3" class="w-[100px] h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
-                            </div>
-                            <div class="flex justify-around my-6">
-                                <button id="olimpiaBed1" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
-                                <button id="olimpiaBed2" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
-                                <button id="olimpiaBed3" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
-                                <button id="olimpiaBed4" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">4</button>
-                                <button id="olimpiaBed5" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">5</button>
-                                <button id="olimpiaBed6" class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg" >6</button>
-                            </div>
-                        </section>
+                </div>
+                <!--Grecia-->
+                <div id="modalGrecia"
+                    class="absolute hidden w-screen h-screen bg-black bg-opacity-50">
+                    <div
+                        class="w-full h-full flex flex-col justify-center items-center">
+                        <div id="contentModal"
+                            class="w-[92vw] bg-white p-3 overflow-hidden border-2 border-black rounded-lg">
+                            <p class="text-center mt-3">Grecia</p>
+                            <section class="Habitaciones">
+                                <div class="flex justify-around my-6">
+                                    <button id="olimpiaBed1"
+                                        class="w-[100px] h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
+                                    <button id="olimpiaBed2"
+                                        class="w-[100px] h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
+                                    <button id="olimpiaBed3"
+                                        class="w-[100px] h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
+                                </div>
+                                <div class="flex justify-around my-6">
+                                    <button id="olimpiaBed1"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
+                                    <button id="olimpiaBed2"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
+                                    <button id="olimpiaBed3"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
+                                    <button id="olimpiaBed4"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">4</button>
+                                    <button id="olimpiaBed5"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">5</button>
+                                    <button id="olimpiaBed6"
+                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">6</button>
+                                </div>
+                            </section>
                         </div>
                         <button id="saveGrecia"
                             class="h-8 w-[35%] mt-3 bg-white border rounded-lg">Guardar</button>
                     </div>
-            </div>
-            <!--Modales-->
+                </div>
+                <!--Modales-->
             </div>
 
         </div>
     </body>
-    <script src="script.js"></script>
+    <script src="Js/script.js"></script>
+    <script src="Js/privadas.js"></script>
 </html>
