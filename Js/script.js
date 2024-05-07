@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    const buttonReport = document.getElementById("b-report");
-
     //Seleccionar y guardar
     const selectPrivate = document.getElementById("selectPrivate");
     const savePrivate = document.getElementById("savePrivate");
@@ -20,12 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalFilipo = document.getElementById("modalFilipo");
     const modalOlimpia = document.getElementById("modalOlimpia");
     const modalGrecia = document.getElementById("modalGrecia");
-
-    buttonReport.addEventListener('click', function() {
-        copiarTexto();
-        var selectedTurno = selectTurno.value;
-        console.log(selectedTurno);
-    });
   
     
     //Open-close Modales

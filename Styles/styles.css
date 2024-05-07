@@ -12,3 +12,8 @@
 .bluefondo {
     background-image: url('Images/fondo.webp');
 }
+
+.min-full-screen {
+    min-height: 100vh;
+    min-width: 100vw;
+}
