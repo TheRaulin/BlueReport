@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     //variables globales
-    let privadasOcupadas = 0;
+    privadasOcupadas = 0;
+    alejandria = 0;
 
     //Alejandria elementos
     const btAlejandria = document.getElementById("btAlejandria");
@@ -71,8 +72,10 @@ document.addEventListener('DOMContentLoaded', function() {
     cbAlejandria.addEventListener('change', function() {
         if (this.checked) {
             trAlejandria.classList.add('bg-out');
+            btAlejandria.value = 2;
         } else {
             trAlejandria.classList.remove('bg-out');
+            btAlejandria.value = 1;
         }
     });
     
@@ -112,8 +115,10 @@ document.addEventListener('DOMContentLoaded', function() {
     cbJacobo.addEventListener('change', function() {
         if (this.checked) {
             trJacobo.classList.add('bg-out');
+            btJacobo.value = 2;
         } else {
             trJacobo.classList.remove('bg-out');
+            btJacobo.value = 1;
         }
     });
 
@@ -153,8 +158,10 @@ document.addEventListener('DOMContentLoaded', function() {
     cbLourdes.addEventListener('change', function() {
         if (this.checked) {
             trLourdes.classList.add('bg-out');
+            btLourdes.value = 2;
         } else {
             trLourdes.classList.remove('bg-out');
+            btLourdes.value = 1;
         }
     });
 
@@ -194,8 +201,10 @@ document.addEventListener('DOMContentLoaded', function() {
     cbMacedonia.addEventListener('change', function() {
         if (this.checked) {
             trMacedonia.classList.add('bg-out');
+            btMacedonia.value = 2;
         } else {
             trMacedonia.classList.remove('bg-out');
+            btMacedonia.value = 1;
         }
     });
 
@@ -216,6 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
             cbVita.disabled = false;
             r1Vita.disabled = false;
             r2Vita.disabled = false;
+            console.log(privadasOcupadas);
         } else {
             privadasOcupadas -= 1;
             r2Vita.checked = false;
@@ -235,8 +245,12 @@ document.addEventListener('DOMContentLoaded', function() {
     cbVita.addEventListener('change', function() {
         if (this.checked) {
             trVita.classList.add('bg-out');
+            btVita.value = 2;
         } else {
             trVita.classList.remove('bg-out');
+            btVita.value = 2;
         }
     });   
+
+    
 });

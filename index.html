@@ -12,7 +12,7 @@
         <script src="Styles/tailwind.js"></script>
     </head>
     <body
-        class="bg-cover bg-center bg-no-repeat h-auto w-screen font-raleway bluefondo">
+        class="h-auto w-screen font-raleway bluefondo">
         <div
             class="flex items-center flex-col">
             <div>
@@ -69,9 +69,102 @@
             </section>
             <!--Modales-->
             <!--reporte-->
-            <div id="modalReport" class="absolute hidden min-full-screen  bg-black bg-opacity-50">
-                <div>
-                    
+            <div  id="modalReport" class="absolute hidden min-full-screen bluefondo">
+                <div class="flex flex-col items-center">
+                    <img style="height: 17vh;" src="Styles/Images/logo.webp" alt="logo">
+                    <h1 class="text-white txtshade" style="font-size: 8vw; line-height: 1;">The Blue House
+                        Hostal</h1>
+                    <h2 class="text-white txtshade" style="font-size: 6vw; line-height: 1;">Reporte turno
+                        recepcion</h2>
+                        <!--Container privadas-->
+                        <div id="containerPrivadas" class="p-[3%] mt-[2%] w-[90vw] bg-white bg-opacity-70 border border-black rounded-lg">
+                            <p id="txt-report-private" style="font-size: 4vw; line-height: 1;">Privadas:</p>
+                            <div class="flex space-x-[1%] flex-wrap">
+                                <div id="Alejandria" class="h-[5v] w-[32%] mt-[2%] bg-in border-2 border-inBorder flex flex-grow items-center rounded-lg">
+                                    <p class="text-white w-[80%] txtshade text-center" style="font-size: 3.8vw;">Alejandria</p>
+                                    <div class="h-[100%] w-[0.7%] bg-inBorder "></div>
+                                    <div class="h-[100%] w-[20.3%] flex justify-center items-center">
+                                        <p id="huespedesAlejandria" class="text-white txtshade text-center" style="font-size: 3.8vw;">2</p>
+                                    </div>
+                                </div>
+                                <div id="Jacobo" class="h-[5vh] w-[32%] mt-[2%] bg-in border-2 border-inBorder flex flex-grow items-center rounded-lg">
+                                    <p class="text-white w-[80%] txtshade text-center" style="font-size: 3.8vw;">Jacobo</p>
+                                    <div class="h-[100%] w-[0.7%] bg-inBorder "></div>
+                                    <div class="h-[100%] w-[20.3%] flex justify-center items-center">
+                                        <p id="huespedesJacobo" class="text-white txtshade text-center" style="font-size: 3.8vw;">2</p>
+                                    </div>
+                                </div>     
+                                <div id="Lourdes" class="h-[5vh] w-[32%] mt-[2%] bg-in border-2 border-inBorder flex flex-grow items-center rounded-lg">
+                                    <p class="text-white w-[80%] txtshade text-center" style="font-size: 3.8vw;">Lourdes</p>
+                                    <div class="h-[100%] w-[0.7%] bg-inBorder "></div>
+                                    <div class="h-[100%] w-[20.3%] flex justify-center items-center">
+                                        <p id="huespedesLourdes" class="text-white txtshade text-center" style="font-size: 3.8vw;">2</p>
+                                    </div>
+                                </div> 
+                                <div id="Macedonia" class="h-[5vh] w-[32%] mt-[2%] bg-in border-2 border-inBorder flex flex-grow items-center rounded-lg">
+                                    <p class="text-white w-[80%] txtshade text-center" style="font-size: 3.5vw;">Macedonia</p>
+                                    <div class="h-[100%] w-[0.7%] bg-inBorder "></div>
+                                    <div class="h-[100%] w-[20.3%] flex justify-center items-center">
+                                        <p id="huespedesMacedonia" class="text-white txtshade text-center" style="font-size: 3.8vw;">2</p>
+                                    </div>
+                                </div>
+                                <div id="Vita" class="h-[5vh] w-[32%] mt-[2%] bg-in border-2 border-inBorder flex flex-grow items-center rounded-lg">
+                                    <p class="text-white w-[80%] txtshade text-center" style="font-size: 3.8vw;">Vita</p>
+                                    <div class="h-[100%] w-[0.7%] bg-inBorder "></div>
+                                    <div class="h-[100%] w-[20.3%] flex justify-center items-center">
+                                        <p id="huespedesVita" class="text-white txtshade text-center" style="font-size: 3.8vw;">2</p>
+                                    </div>
+                                </div>                                                                                                                                                            
+                            </div>
+                        </div>
+                        <!--Container Alejandro-->
+                        <div id="containerAlejandro" class="p-[3%] mt-[2%] w-[90vw] bg-white bg-opacity-70 border border-black rounded-lg">
+                            <p id="txt-report-alejandro" style="font-size: 4vw; line-height: 1;">Alejandro:</p>
+                            <div class="flex  flex-wrap">
+                                <div id="alejandroBed1" class="h-[5vh] w-[10vw] mt-[2%] mx-[1.15%] flex justify-center items-center bg-in border-2 border-inBorder rounded-lg">
+                                    <p id="txtBed1A" class="text-white txtshade text-center" style="font-size: 3.8vw;">1</p>
+                                </div>
+                                <div id="alejandroBed2" class="h-[5vh] w-[10vw] mt-[2%] mx-[1.15%] flex justify-center items-center bg-in border-2 border-inBorder rounded-lg">
+                                    <p id="txtBed2A" class="text-white txtshade text-center" style="font-size: 3.8vw;">2</p>
+                                </div> 
+                                <div id="alejandroBed3" class="h-[5vh] w-[10vw] mt-[2%] mx-[1.15%] flex justify-center items-center bg-in border-2 border-inBorder rounded-lg">
+                                    <p id="txtBed3A" class="text-white txtshade text-center" style="font-size: 3.8vw;">3</p>
+                                </div>    
+                                <div id="alejandroBed4" class="h-[5vh] w-[10vw] mt-[2%] mx-[1.15%] flex justify-center items-center bg-in border-2 border-inBorder rounded-lg">
+                                    <p id="txtBed4A" class="text-white txtshade text-center" style="font-size: 3.8vw;">4</p>
+                                </div> 
+                                <div id="alejandroBed5" class="h-[5vh] w-[10vw] mt-[2%] mx-[1.15%] flex justify-center items-center bg-in border-2 border-inBorder rounded-lg">
+                                    <p id="txtBed5A" class="text-white txtshade text-center" style="font-size: 3.8vw;">5</p>
+                                </div>            
+                                <div id="alejandroBed6" class="h-[5vh] w-[10vw] mt-[2%] mx-[1.15%] flex justify-center items-center bg-in border-2 border-inBorder rounded-lg">
+                                    <p id="txtBed6A" class="text-white txtshade text-center" style="font-size: 3.8vw;">6</p>
+                                </div>     
+                                <div id="alejandroBed7" class="h-[5vh] w-[10vw] mt-[2%] mx-[1.15%] flex justify-center items-center bg-in border-2 border-inBorder rounded-lg">
+                                    <p id="txtBed7A" class="text-white txtshade text-center" style="font-size: 3.8vw;">7</p>
+                                </div>  
+                                <div id="alejandroBed8" class="h-[5vh] w-[10vw] mt-[2%] mx-[1.15%] flex justify-center items-center bg-in border-2 border-inBorder rounded-lg">
+                                    <p id="txtBed8A" class="text-white txtshade text-center" style="font-size: 3.8vw;">8</p>
+                                </div> 
+                                <div id="alejandroBed9" class="h-[5vh] w-[10vw] mt-[2%] mx-[1.15%] flex justify-center items-center bg-in border-2 border-inBorder rounded-lg">
+                                    <p id="txtBed9A" class="text-white txtshade text-center" style="font-size: 3.8vw;">9</p>
+                                </div>         
+                                <div id="alejandroBed10" class="h-[5vh] w-[10vw] mt-[2%] mx-[1.15%] flex justify-center items-center bg-in border-2 border-inBorder rounded-lg">
+                                    <p id="txtBed10A" class="text-white txtshade text-center" style="font-size: 3.8vw;">10</p>
+                                </div>  
+                                <div id="alejandroBed11" class="h-[5vh] w-[10vw] mt-[2%] mx-[1.15%] flex justify-center items-center bg-in border-2 border-inBorder rounded-lg">
+                                    <p id="txtBed11A" class="text-white txtshade text-center" style="font-size: 3.8vw;">11</p>
+                                </div>    
+                                <div id="alejandroBed12" class="h-[5vh] w-[10vw] mt-[2%] mx-[1.15%] flex justify-center items-center bg-in border-2 border-inBorder rounded-lg">
+                                    <p id="txtBed12A" class="text-white txtshade text-center" style="font-size: 3.8vw;">12</p>
+                                </div>   
+                                <div id="alejandroBed13" class="h-[5vh] w-[10vw] mt-[2%] mx-[1.15%] flex justify-center items-center bg-in border-2 border-inBorder rounded-lg">
+                                    <p id="txtBed13A" class="text-white txtshade text-center" style="font-size: 3.8vw;">13</p>
+                                </div>  
+                                <div id="alejandroBed14" class="h-[5vh] w-[10vw] mt-[2%] mx-[1.15%] flex justify-center items-center bg-in border-2 border-inBorder rounded-lg">
+                                    <p id="txtBed14A" class="text-white txtshade text-center" style="font-size: 3.8vw;">14</p>
+                                </div>                                                                                                                                                                                                                                                                                                                                                                                          
+                            </div>
+                        </div>
                 </div>
             </div>
             <!--Privadas-->

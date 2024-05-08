@@ -67,6 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     prueba.addEventListener('click', function() {
         console.log('hola');
-    });
+    });  
 
 });
