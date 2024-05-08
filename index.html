@@ -69,8 +69,8 @@
             </section>
             <!--Modales-->
             <!--reporte-->
-            <div  id="modalReport" class="absolute hidden min-full-screen bluefondo">
-                <div class="flex flex-col items-center">
+            <div  id="modalReport" class="absolute min-full-screen bluefondo">
+                <div id="content" class="flex flex-col items-center pb-[3%]">
                     <img style="height: 17vh;" src="Styles/Images/logo.webp" alt="logo">
                     <h1 class="text-white txtshade" style="font-size: 8vw; line-height: 1;">The Blue House
                         Hostal</h1>
@@ -164,7 +164,11 @@
                                     <p id="txtBed14A" class="text-white txtshade text-center" style="font-size: 3.8vw;">14</p>
                                 </div>                                                                                                                                                                                                                                                                                                                                                                                          
                             </div>
-                        </div>
+                        </div> 
+                </div>
+                <div class="flex justify-around">
+                    <button id="finalizar" class="h-[5vh] w-[35%] mt-[3%] bg-blue-500 rounded-lg text-white txtshade">Finalizar</button>
+                    <button id="editarReporte" class="h-[5vh] w-[35%] mt-[3%] bg-green-500 rounded-lg text-white txtshade">Editar</button>
                 </div>
             </div>
             <!--Privadas-->
@@ -470,4 +474,7 @@
     <script src="Js/olimpia.js"></script>
     <script src="Js/grecia.js"></script>
     <script src="Js/reporte.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
+    <script src="Js/image.js"></script>
 </html>

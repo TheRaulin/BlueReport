@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const buttonReport = document.getElementById("b-report");
+    const editarReporte = document.getElementById("editarReporte")
 
     //Elementos del reporte (Privadas) 
     const containerPrivadas = document.getElementById('containerPrivadas'); 
@@ -64,6 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const btVita = document.getElementById("btVita");
     const r1Vita = document.getElementById('r1Vita');
     const huespedesVita = document.getElementById("huespedesVita");    
+
+    editarReporte.addEventListener('click', function() {
+        modalReport.classList.add('hidden');
+    });
 
     buttonReport.addEventListener('click', function() {
         modalReport.classList.remove('hidden');
