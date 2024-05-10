@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const huespedesVita = document.getElementById("huespedesVita");    
 
     editarReporte.addEventListener('click', function() {
-        modalReport.classList.add('hidden');
+        //modalReport.classList.add('hidden');
     });
 
     buttonReport.addEventListener('click', function() {
