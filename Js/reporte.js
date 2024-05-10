@@ -97,6 +97,31 @@ document.addEventListener('DOMContentLoaded', function() {
     const bt5Olimpia = document.getElementById("bt5Olimpia");
     const bt6Olimpia = document.getElementById("bt6Olimpia");  
 
+    //Elementos del reporte (Grecia)
+    const containerGrecia = document.getElementById('containerGrecia'); 
+    //dobles
+    const olimpiaBed1Doble = document.getElementById('olimpiaBed1Doble');
+    const olimpiaBed2Doble = document.getElementById('olimpiaBed2Doble');
+    const olimpiaBed3Doble = document.getElementById('olimpiaBed3Doble');    
+    const greciaBed1 = document.getElementById('greciaBed1');
+    const greciaBed2 = document.getElementById('greciaBed2');
+    const greciaBed3 = document.getElementById('greciaBed3');
+    const greciaBed4 = document.getElementById('greciaBed4');
+    const greciaBed5 = document.getElementById('greciaBed5');
+    const greciaBed6 = document.getElementById('greciaBed6');
+    
+    //Obtener elemtos que contienen los datos
+    //Grecia
+    const bt1dGrecia = document.getElementById("bt1dGrecia");
+    const bt2dGrecia = document.getElementById("bt2dGrecia");
+    const bt3dGrecia = document.getElementById("bt3dGrecia");
+    const bt1Grecia = document.getElementById("bt1Grecia");
+    const bt2Grecia = document.getElementById("bt2Grecia");
+    const bt3Grecia = document.getElementById("bt3Grecia");
+    const bt4Grecia = document.getElementById("bt4Grecia");
+    const bt5Grecia = document.getElementById("bt5Grecia");
+    const bt6Grecia = document.getElementById("bt6Grecia");      
+
     //Alejandria
     const btAlejandria = document.getElementById("btAlejandria");
     const r1Alejandria = document.getElementById('r1Alejandria');
@@ -400,6 +425,67 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if(bt6Olimpia.value == 2){
             olimpiaBed6.classList.remove('bg-in');
             olimpiaBed6.classList.add('bg-out');            
+        }     
+        
+        //Compartidas (Grecia)
+        if(GreciaIn == 0){
+            containerGrecia.style.display = 'none';
+        }
+        //Dobles
+        if(bt1dGrecia.value == 0){
+            greciaBed1Doble.style.display = 'none';  
+        } else if(bt1dGrecia.value == 2){
+            greciaBed1Doble.classList.remove('bg-in');
+            greciaBed1Doble.classList.add('bg-out');            
+        }
+        if(bt2dGrecia.value == 0){
+            greciaBed2Doble.style.display = 'none';
+        } else if(bt2dGrecia.value == 2){
+            greciaBed2Doble.classList.remove('bg-in');
+            greciaBed2Doble.classList.add('bg-out');            
+        }   
+        if(bt3dGrecia.value == 0){
+            greciaBed3Doble.style.display = 'none';
+        } else if(bt3dGrecia.value == 2){
+            greciaBed3Doble.classList.remove('bg-in');
+            greciaBed3Doble.classList.add('bg-out');            
         }         
+        //Normales
+        if(bt1Grecia.value == 0){
+            greciaBed1.style.display = 'none';  
+        } else if(bt1Grecia.value == 2){
+            greciaBed1.classList.remove('bg-in');
+            greciaBed1.classList.add('bg-out');            
+        }
+        if(bt2Grecia.value == 0){
+            greciaBed2.style.display = 'none';
+        } else if(bt2Grecia.value == 2){
+            greciaBed2.classList.remove('bg-in');
+            greciaBed2.classList.add('bg-out');            
+        }   
+        if(bt3Grecia.value == 0){
+            greciaBed3.style.display = 'none';
+        } else if(bt3Grecia.value == 2){
+            greciaBed3.classList.remove('bg-in');
+            greciaBed3.classList.add('bg-out');            
+        }    
+        if(bt4Grecia.value == 0){
+            greciaBed4.style.display = 'none';
+        } else if(bt4Grecia.value == 2){
+            greciaBed4.classList.remove('bg-in');
+            greciaBed4.classList.add('bg-out');            
+        }   
+        if(bt5Grecia.value == 0){
+            greciaBed5.style.display = 'none';
+        } else if(bt5Grecia.value == 2){
+            greciaBed5.classList.remove('bg-in');
+            greciaBed5.classList.add('bg-out');            
+        } 
+        if(bt6Grecia.value == 0){
+            greciaBed6.style.display = 'none';
+        } else if(bt6Grecia.value == 2){
+            greciaBed6.classList.remove('bg-in');
+            greciaBed6.classList.add('bg-out');            
+        }        
     }); 
 });

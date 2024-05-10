@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
     //Open-close Modales
     selectPrivate.addEventListener('click', function() {
         modalPrivate.classList.remove('hidden');
+        selectPrivate.classList.add('bg-green-400');
+        selectPrivate.innerText = "Seleccionado";
     });
 
     savePrivate.addEventListener('click', function() {
@@ -32,6 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
     //Alejandro
     selectAlejandro.addEventListener('click', function() {
         modalAlejandro.classList.remove('hidden');
+        selectAlejandro.classList.add('bg-green-400');
+        selectAlejandro.innerText = "Seleccionado"; 
     });
 
     saveAlejandro.addEventListener('click', function() {
@@ -41,6 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
     //Filpo
     selectFilipo.addEventListener('click', function() {
         modalFilipo.classList.remove('hidden');
+        selectFilipo.classList.add('bg-green-400');
+        selectFilipo.innerText = "Seleccionado";        
     });
 
     saveFilipo.addEventListener('click', function() {
@@ -50,6 +56,8 @@ document.addEventListener('DOMContentLoaded', function() {
     //Olimpia
     selectOlimpia.addEventListener('click', function() {
         modalOlimpia.classList.remove('hidden');
+        selectOlimpia.classList.add('bg-green-400');
+        selectOlimpia.innerText = "Seleccionado";        
     });
 
     saveOlimpia.addEventListener('click', function() {
@@ -59,6 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
     //Grecia
     selectGrecia.addEventListener('click', function() {
         modalGrecia.classList.remove('hidden');
+        selectGrecia.classList.add('bg-green-400');
+        selectGrecia.innerText = "Seleccionado";         
     });
 
     saveGrecia.addEventListener('click', function() {

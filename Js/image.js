@@ -1,9 +1,41 @@
 document.getElementById('finalizar').addEventListener('click', function() {
-    var bedsElements = document.querySelectorAll('.beds');
-        bedsElements.forEach(function(element) {
-                element.classList.add('mt-[-40%]');
-        });
+    //camas de un cuerpo
+    const bedsElements = document.querySelectorAll('.beds');
+    //el nombre de las camas
+    const rooms = document.querySelectorAll('.room');
+    //los container de las camas y sus nombres
+    const cRooms = document.querySelectorAll('.cRoom');
+    //camas dobles de grecia
+    const dsGrecia = document.querySelectorAll('.dGrecia');
+    //Habitaciones privadas
+    const privadas = document.querySelectorAll('.privada');
+    //Texto encabecado
+    const txtBlue = document.getElementById('txtBlue');
+    const txtReport = document.getElementById('txtReport');
 
+        txtBlue.classList.add('mt-[-2vh]');
+        txtReport.classList.add('mb-[2vh]');
+
+        bedsElements.forEach(function(element) {
+                element.classList.add('mt-[-50%]');
+        });     
+
+        rooms.forEach(function(room) {
+            room.classList.add('mb-[4%]');
+        });            
+
+        cRooms.forEach(function(cRoom) {
+            cRoom.classList.add('pt-[0.3%]');
+        });        
+
+        dsGrecia.forEach(function(dGrecia) {
+            dGrecia.classList.add('mt-[-26%]');
+        });  
+
+        privadas.forEach(function(privada) {
+            privada.classList.add('mt-[-2.1vh]');
+        });                   
+        
     const content = document.getElementById('content');    
     content.classList.add('bluefondo');
 
@@ -25,8 +57,5 @@ document.getElementById('finalizar').addEventListener('click', function() {
             }, 'image/png');
         });  
     }, 100);    
-    setTimeout(function() {
-        location.reload();
-    }, 2000);
 });
 
