@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let FilipoIn = 0;
+    FilipoIn = 0;
+    FilipoOut = 0;
+
 
     const bt1Filipo = document.getElementById("bt1Filipo");
     const bt2Filipo = document.getElementById("bt2Filipo");
@@ -21,18 +23,17 @@ document.addEventListener('DOMContentLoaded', function() {
         if(bt1Filipo.value == 0) {
             FilipoIn += 1;
             bt1Filipo.value = 1;
-            console.log(bt1Filipo.value)
             bt1Filipo.classList.add('bg-in', 'text-white', 'border-inBorder');
         } else if(bt1Filipo.value == 1){
             bt1Filipo.value = 2;
             bt1Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
             bt1Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
-            console.log(bt1Filipo.value)
+            FilipoOut +=1;
         } else {
             FilipoIn -= 1;
+            FilipoOut -=1;
             bt1Filipo.value = 0;
-            bt1Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');   
-            console.log(bt1Filipo.value)           
+            bt1Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');           
         }
     });  
 
@@ -45,12 +46,15 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if(bt2Filipo.value == 1){
             bt2Filipo.value = 2;
             bt2Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
-            bt2Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            bt2Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');
+            FilipoOut +=1;
         } else {
             FilipoIn -= 1;
+            FilipoOut -=1;
             bt2Filipo.value = 0;
             bt2Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
+        console.log(FilipoOut)
     });    
 
     //Cama 3 Filipo ---------------------------------------------------------------- 3
@@ -63,8 +67,10 @@ document.addEventListener('DOMContentLoaded', function() {
             bt3Filipo.value = 2;
             bt3Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
             bt3Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            FilipoOut +=1;
         } else {
             FilipoIn -= 1;
+            FilipoOut -=1;
             bt3Filipo.value = 0;
             bt3Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
@@ -80,8 +86,10 @@ document.addEventListener('DOMContentLoaded', function() {
             bt4Filipo.value = 2;
             bt4Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
             bt4Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            FilipoOut +=1;
         } else {
             FilipoIn -= 1;
+            FilipoOut -=1;
             bt4Filipo.value = 0;
             bt4Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
@@ -96,9 +104,11 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if(bt5Filipo.value == 1){
             bt5Filipo.value = 2;
             bt5Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
-            bt5Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            bt5Filipo.classList.add('bg-out', 'text-white', 'border-inBorder'); 
+            FilipoOut +=1; 
         } else {
             FilipoIn -= 1;
+            FilipoOut -=1;
             bt5Filipo.value = 0;
             bt5Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
@@ -113,9 +123,11 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if(bt6Filipo.value == 1){
             bt6Filipo.value = 2;
             bt6Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
-            bt6Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            bt6Filipo.classList.add('bg-out', 'text-white', 'border-inBorder'); 
+            FilipoOut +=1; 
         } else {
             FilipoIn -= 1;
+            FilipoOut -=1;
             bt6Filipo.value = 0;
             bt6Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
@@ -131,8 +143,10 @@ document.addEventListener('DOMContentLoaded', function() {
             bt7Filipo.value = 2;
             bt7Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
             bt7Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            FilipoOut +=1;
         } else {
             FilipoIn -= 1;
+            FilipoOut -=1;
             bt7Filipo.value = 0;
             bt7Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
@@ -147,9 +161,11 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if(bt8Filipo.value == 1){
             bt8Filipo.value = 2;
             bt8Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
-            bt8Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            bt8Filipo.classList.add('bg-out', 'text-white', 'border-inBorder'); 
+            FilipoOut +=1; 
         } else {
             FilipoIn -= 1;
+            FilipoOut -=1;
             bt8Filipo.value = 0;
             bt8Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
@@ -165,8 +181,10 @@ document.addEventListener('DOMContentLoaded', function() {
             bt9Filipo.value = 2;
             bt9Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
             bt9Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            FilipoOut +=1;
         } else {
             FilipoIn -= 1;
+            FilipoOut -=1;
             bt9Filipo.value = 0;
             bt9Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
@@ -181,9 +199,11 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if(bt10Filipo.value == 1){
             bt10Filipo.value = 2;
             bt10Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
-            bt10Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            bt10Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');
+            FilipoOut +=1;  
         } else {
             FilipoIn -= 1;
+            FilipoOut -=1;
             bt10Filipo.value = 0;
             bt10Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
@@ -198,9 +218,11 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if(bt11Filipo.value == 1){
             bt11Filipo.value = 2;
             bt11Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
-            bt11Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            bt11Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');
+            FilipoOut +=1;  
         } else {
             FilipoIn -= 1;
+            FilipoOut -=1;
             bt11Filipo.value = 0;
             bt11Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
@@ -216,8 +238,10 @@ document.addEventListener('DOMContentLoaded', function() {
             bt12Filipo.value = 2;
             bt12Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
             bt12Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            FilipoOut +=1;
         } else {
             FilipoIn -= 1;
+            FilipoOut -=1;
             bt12Filipo.value = 0;
             bt12Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
@@ -232,9 +256,11 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if(bt13Filipo.value == 1){
             bt13Filipo.value = 2;
             bt13Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
-            bt13Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            bt13Filipo.classList.add('bg-out', 'text-white', 'border-inBorder'); 
+            FilipoOut +=1; 
         } else {
             FilipoIn -= 1;
+            FilipoOut -=1;
             bt13Filipo.value = 0;
             bt13Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
@@ -249,9 +275,11 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if(bt14Filipo.value == 1){
             bt14Filipo.value = 2;
             bt14Filipo.classList.remove('bg-in', 'text-white', 'border-inBorder');
-            bt14Filipo.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            bt14Filipo.classList.add('bg-out', 'text-white', 'border-inBorder'); 
+            FilipoOut +=1; 
         } else {
             FilipoIn -= 1;
+            FilipoOut -=1;
             bt14Filipo.value = 0;
             bt14Filipo.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }

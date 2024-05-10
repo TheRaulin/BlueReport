@@ -45,6 +45,58 @@ document.addEventListener('DOMContentLoaded', function() {
     const bt13Alejandro = document.getElementById("bt13Alejandro");
     const bt14Alejandro = document.getElementById("bt14Alejandro");
 
+    //Elementos del reporte (Filipo)
+    const containerFilipo = document.getElementById('containerFilipo'); 
+    const filipoBed1 = document.getElementById('filipoBed1');
+    const filipoBed2 = document.getElementById('filipoBed2');
+    const filipoBed3 = document.getElementById('filipoBed3');
+    const filipoBed4 = document.getElementById('filipoBed4');
+    const filipoBed5 = document.getElementById('filipoBed5');
+    const filipoBed6 = document.getElementById('filipoBed6');
+    const filipoBed7 = document.getElementById('filipoBed7');
+    const filipoBed8 = document.getElementById('filipoBed8');
+    const filipoBed9 = document.getElementById('filipoBed9');
+    const filipoBed10 = document.getElementById('filipoBed10');
+    const filipoBed11 = document.getElementById('filipoBed11');
+    const filipoBed12 = document.getElementById('filipoBed12');
+    const filipoBed13 = document.getElementById('filipoBed13');
+    const filipoBed14 = document.getElementById('filipoBed14'); 
+    
+    //Obtener elemtos que contienen los datos
+    //Filipo
+    const bt1Filipo = document.getElementById("bt1Filipo");
+    const bt2Filipo = document.getElementById("bt2Filipo");
+    const bt3Filipo = document.getElementById("bt3Filipo");
+    const bt4Filipo = document.getElementById("bt4Filipo");
+    const bt5Filipo = document.getElementById("bt5Filipo");
+    const bt6Filipo = document.getElementById("bt6Filipo");
+    const bt7Filipo = document.getElementById("bt7Filipo");
+    const bt8Filipo = document.getElementById("bt8Filipo");
+    const bt9Filipo = document.getElementById("bt9Filipo");
+    const bt10Filipo = document.getElementById("bt10Filipo");
+    const bt11Filipo = document.getElementById("bt11Filipo");
+    const bt12Filipo = document.getElementById("bt12Filipo");
+    const bt13Filipo = document.getElementById("bt13Filipo");
+    const bt14Filipo = document.getElementById("bt14Filipo");   
+    
+    //Elementos del reporte (Olimpia)
+    const containerOlimpia = document.getElementById('containerOlimpia'); 
+    const olimpiaBed1 = document.getElementById('olimpiaBed1');
+    const olimpiaBed2 = document.getElementById('olimpiaBed2');
+    const olimpiaBed3 = document.getElementById('olimpiaBed3');
+    const olimpiaBed4 = document.getElementById('olimpiaBed4');
+    const olimpiaBed5 = document.getElementById('olimpiaBed5');
+    const olimpiaBed6 = document.getElementById('olimpiaBed6');
+    
+    //Obtener elemtos que contienen los datos
+    //Olimpia
+    const bt1Olimpia = document.getElementById("bt1Olimpia");
+    const bt2Olimpia = document.getElementById("bt2Olimpia");
+    const bt3Olimpia = document.getElementById("bt3Olimpia");
+    const bt4Olimpia = document.getElementById("bt4Olimpia");
+    const bt5Olimpia = document.getElementById("bt5Olimpia");
+    const bt6Olimpia = document.getElementById("bt6Olimpia");  
+
     //Alejandria
     const btAlejandria = document.getElementById("btAlejandria");
     const r1Alejandria = document.getElementById('r1Alejandria');
@@ -216,6 +268,138 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if(bt14Alejandro.value == 2){
             alejandroBed14.classList.remove('bg-in');
             alejandroBed14.classList.add('bg-out');            
-        }                                                                   
+        }    
+        
+        //Compartidas (Filipo)
+        if(FilipoIn == 0){
+            containerFilipo.style.display = 'none';
+        }
+
+        if(bt1Filipo.value == 0){
+            filipoBed1.style.display = 'none';  
+        } else if(bt1Filipo.value == 2){
+            filipoBed1.classList.remove('bg-in');
+            filipoBed1.classList.add('bg-out');            
+        }
+        if(bt2Filipo.value == 0){
+            filipoBed2.style.display = 'none';
+        } else if(bt2Filipo.value == 2){
+            filipoBed2.classList.remove('bg-in');
+            filipoBed2.classList.add('bg-out');            
+        }   
+        if(bt3Filipo.value == 0){
+            filipoBed3.style.display = 'none';
+        } else if(bt3Filipo.value == 2){
+            filipoBed3.classList.remove('bg-in');
+            filipoBed3.classList.add('bg-out');            
+        }    
+        if(bt4Filipo.value == 0){
+            filipoBed4.style.display = 'none';
+        } else if(bt4Filipo.value == 2){
+            filipoBed4.classList.remove('bg-in');
+            filipoBed4.classList.add('bg-out');            
+        }   
+        if(bt5Filipo.value == 0){
+            filipoBed5.style.display = 'none';
+        } else if(bt5Filipo.value == 2){
+            filipoBed5.classList.remove('bg-in');
+            filipoBed5.classList.add('bg-out');            
+        } 
+        if(bt6Filipo.value == 0){
+            filipoBed6.style.display = 'none';
+        } else if(bt6Filipo.value == 2){
+            filipoBed6.classList.remove('bg-in');
+            filipoBed6.classList.add('bg-out');            
+        } 
+        if(bt7Filipo.value == 0){
+            filipoBed7.style.display = 'none';
+        } else if(bt7Filipo.value == 2){
+            filipoBed7.classList.remove('bg-in');
+            filipoBed7.classList.add('bg-out');            
+        }   
+        if(bt8Filipo.value == 0){
+            filipoBed8.style.display = 'none';
+        } else if(bt8Filipo.value == 2){
+            filipoBed8.classList.remove('bg-in');
+            filipoBed8.classList.add('bg-out');            
+        }   
+        if(bt9Filipo.value == 0){
+            filipoBed9.style.display = 'none';
+        } else if(bt9Filipo.value == 2){
+            filipoBed9.classList.remove('bg-in');
+            filipoBed9.classList.add('bg-out');            
+        }    
+        if(bt10Filipo.value == 0){
+            filipoBed10.style.display = 'none';
+        } else if(bt10Filipo.value == 2){
+            filipoBed10.classList.remove('bg-in');
+            filipoBed10.classList.add('bg-out');            
+        }    
+        if(bt11Filipo.value == 0){
+            filipoBed11.style.display = 'none';
+        } else if(bt11Filipo.value == 2){
+            filipoBed11.classList.remove('bg-in');
+            filipoBed11.classList.add('bg-out');            
+        }     
+        if(bt12Filipo.value == 0){
+            filipoBed12.style.display = 'none';
+        } else if(bt12Filipo.value == 2){
+            filipoBed12.classList.remove('bg-in');
+            filipoBed12.classList.add('bg-out');            
+        }      
+        if(bt13Filipo.value == 0){
+            filipoBed13.style.display = 'none';
+        } else if(bt13Filipo.value == 2){
+            filipoBed13.classList.remove('bg-in');
+            filipoBed13.classList.add('bg-out');            
+        }  
+        if(bt14Filipo.value == 0){
+            filipoBed14.style.display = 'none';
+        } else if(bt14Filipo.value == 2){
+            filipoBed14.classList.remove('bg-in');
+            filipoBed14.classList.add('bg-out');            
+        }   
+        
+        //Compartidas (Olimpia)
+        if(OlimpiaIn == 0){
+            containerOlimpia.style.display = 'none';
+        }
+
+        if(bt1Olimpia.value == 0){
+            olimpiaBed1.style.display = 'none';  
+        } else if(bt1Olimpia.value == 2){
+            olimpiaBed1.classList.remove('bg-in');
+            olimpiaBed1.classList.add('bg-out');            
+        }
+        if(bt2Olimpia.value == 0){
+            olimpiaBed2.style.display = 'none';
+        } else if(bt2Olimpia.value == 2){
+            olimpiaBed2.classList.remove('bg-in');
+            olimpiaBed2.classList.add('bg-out');            
+        }   
+        if(bt3Olimpia.value == 0){
+            olimpiaBed3.style.display = 'none';
+        } else if(bt3Olimpia.value == 2){
+            olimpiaBed3.classList.remove('bg-in');
+            olimpiaBed3.classList.add('bg-out');            
+        }    
+        if(bt4Olimpia.value == 0){
+            olimpiaBed4.style.display = 'none';
+        } else if(bt4Olimpia.value == 2){
+            olimpiaBed4.classList.remove('bg-in');
+            olimpiaBed4.classList.add('bg-out');            
+        }   
+        if(bt5Olimpia.value == 0){
+            olimpiaBed5.style.display = 'none';
+        } else if(bt5Olimpia.value == 2){
+            olimpiaBed5.classList.remove('bg-in');
+            olimpiaBed5.classList.add('bg-out');            
+        } 
+        if(bt6Olimpia.value == 0){
+            olimpiaBed6.style.display = 'none';
+        } else if(bt6Olimpia.value == 2){
+            olimpiaBed6.classList.remove('bg-in');
+            olimpiaBed6.classList.add('bg-out');            
+        }         
     }); 
 });

@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let OlimpiaIn = 0;
+    OlimpiaIn = 0;
+    OlimpiaOut = 0;
+
 
     const bt1Olimpia = document.getElementById("bt1Olimpia");
     const bt2Olimpia = document.getElementById("bt2Olimpia");
@@ -13,18 +15,17 @@ document.addEventListener('DOMContentLoaded', function() {
         if(bt1Olimpia.value == 0) {
             OlimpiaIn += 1;
             bt1Olimpia.value = 1;
-            console.log(bt1Olimpia.value)
             bt1Olimpia.classList.add('bg-in', 'text-white', 'border-inBorder');
         } else if(bt1Olimpia.value == 1){
             bt1Olimpia.value = 2;
             bt1Olimpia.classList.remove('bg-in', 'text-white', 'border-inBorder');
             bt1Olimpia.classList.add('bg-out', 'text-white', 'border-inBorder');  
-            console.log(bt1Olimpia.value)
+            OlimpiaOut +=1;
         } else {
             OlimpiaIn -= 1;
+            OlimpiaOut -=1;
             bt1Olimpia.value = 0;
-            bt1Olimpia.classList.remove('bg-out', 'text-white', 'border-inBorder');   
-            console.log(bt1Olimpia.value)           
+            bt1Olimpia.classList.remove('bg-out', 'text-white', 'border-inBorder');           
         }
     });  
 
@@ -37,12 +38,15 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if(bt2Olimpia.value == 1){
             bt2Olimpia.value = 2;
             bt2Olimpia.classList.remove('bg-in', 'text-white', 'border-inBorder');
-            bt2Olimpia.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            bt2Olimpia.classList.add('bg-out', 'text-white', 'border-inBorder');
+            OlimpiaOut +=1;
         } else {
             OlimpiaIn -= 1;
+            OlimpiaOut -=1;
             bt2Olimpia.value = 0;
             bt2Olimpia.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
+        console.log(OlimpiaOut)
     });    
 
     //Cama 3 Olimpia ---------------------------------------------------------------- 3
@@ -55,8 +59,10 @@ document.addEventListener('DOMContentLoaded', function() {
             bt3Olimpia.value = 2;
             bt3Olimpia.classList.remove('bg-in', 'text-white', 'border-inBorder');
             bt3Olimpia.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            OlimpiaOut +=1;
         } else {
             OlimpiaIn -= 1;
+            OlimpiaOut -=1;
             bt3Olimpia.value = 0;
             bt3Olimpia.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
@@ -72,8 +78,10 @@ document.addEventListener('DOMContentLoaded', function() {
             bt4Olimpia.value = 2;
             bt4Olimpia.classList.remove('bg-in', 'text-white', 'border-inBorder');
             bt4Olimpia.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            OlimpiaOut +=1;
         } else {
             OlimpiaIn -= 1;
+            OlimpiaOut -=1;
             bt4Olimpia.value = 0;
             bt4Olimpia.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
@@ -88,9 +96,11 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if(bt5Olimpia.value == 1){
             bt5Olimpia.value = 2;
             bt5Olimpia.classList.remove('bg-in', 'text-white', 'border-inBorder');
-            bt5Olimpia.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            bt5Olimpia.classList.add('bg-out', 'text-white', 'border-inBorder'); 
+            OlimpiaOut +=1; 
         } else {
             OlimpiaIn -= 1;
+            OlimpiaOut -=1;
             bt5Olimpia.value = 0;
             bt5Olimpia.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
@@ -105,12 +115,13 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if(bt6Olimpia.value == 1){
             bt6Olimpia.value = 2;
             bt6Olimpia.classList.remove('bg-in', 'text-white', 'border-inBorder');
-            bt6Olimpia.classList.add('bg-out', 'text-white', 'border-inBorder');  
+            bt6Olimpia.classList.add('bg-out', 'text-white', 'border-inBorder'); 
+            OlimpiaOut +=1; 
         } else {
             OlimpiaIn -= 1;
+            OlimpiaOut -=1;
             bt6Olimpia.value = 0;
             bt6Olimpia.classList.remove('bg-out', 'text-white', 'border-inBorder');             
         }
-    });  
-     
+    });      
 });
