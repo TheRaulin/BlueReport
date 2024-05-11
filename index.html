@@ -12,59 +12,64 @@
         <script src="Styles/tailwind.js"></script>
     </head>
     <body
-        class="h-auto w-screen font-raleway bluefondo">
+        class="h-screen w-screen font-raleway bluefondo">
         <div
             class="flex items-center flex-col">
             <div>
-                <img class="w-32" src="Styles/Images/logo.webp" alt="logo the blue house">
+                <img class="h-[17vh]" src="Styles/Images/logo.webp" alt="logo the blue house">
             </div>
             <!--Titulos-->
-            <h1 class="text-3xl text-white txtshade">The Blue House
+            <h1 class="text-3xl text-white txtshade mt-[-2%]" style="font-size: 8vw; line-height: 1;">The Blue House
                 Hostal</h1>
-            <h2 class="text-2xl text-white txtshade">Reporte turno
+            <h2 class="text-2xl text-white txtshade" style="font-size: 6vw; line-height: 1;">Reporte turno
                 recepcion</h2>
             <div id="report-container"
-                class="p-6 mt-3 w-[85vw] bg-base bg-opacity-70 border border-black rounded-lg">
+                class="p-[6%] mt-[3%] w-[85vw] bg-base bg-opacity-70 border-[3px] border-black rounded-[3vw]">
 
+                <!--Saldo en caja-->
+                <section class="flex flex-col mb-[3%]">
+                    <label for="" class="text-white aroundow" style="font-size: 4.5vw;">Saldo en caja: </label>
+                    <input type="number" class="h-[5vh] rounded-[3vw] bg-white border-[3px] border-black" style="font-size: 3.8vw;" placeholder="  Ingrese el saldo en caja">
+                </section>
                 <!--Privadas-->
-                <section class="flex flex-col mb-3">
-                    <label for class="text-white aroundow">
+                <section class="flex flex-col mb-[3%]">
+                    <label for class="text-white aroundow" style="font-size: 4.5vw;">
                         Privadas ocupadas y huespedes:</label>
                     <button id="selectPrivate"
-                        class=" h-8 rounded-lg bg-white border-2 border-black">Seleccionar</button>
+                        class=" h-[5vh] rounded-[3vw] bg-white border-[3px] border-black" style="font-size: 3.8vw;">Seleccionar</button>
                 </section>
                 <!--Alejandro-->
-                <section class="flex flex-col mb-3">
-                    <label for class="text-white aroundow">
+                <section class="flex flex-col mb-[3%]">
+                    <label for class="text-white aroundow" style="font-size: 4.5vw;">
                         Alejandro: </label>
                     <button id="selectAlejandro"
-                        class=" h-8 rounded-lg bg-white border-2 border-black">Seleccionar</button>
+                        class=" h-[5vh] rounded-[3vw] bg-white border-[3px] border-black" style="font-size: 3.8vw;">Seleccionar</button>
                 </section>
                 <!--Filipo-->
-                <section class="flex flex-col mb-3">
-                    <label for class="text-white aroundow">
+                <section class="flex flex-col mb-[3%]">
+                    <label for class="text-white aroundow" style="font-size: 4.5vw;">
                         Filipo: </label>
                     <button id="selectFilipo"
-                        class=" h-8 rounded-lg bg-white border-2 border-black">Seleccionar</button>
+                        class=" h-[5vh] rounded-[3vw] bg-white border-[3px] border-black" style="font-size: 3.8vw;">Seleccionar</button>
                 </section>
                 <!--Olimpia-->
-                <section class="flex flex-col mb-3">
-                    <label for class="text-white aroundow">
+                <section class="flex flex-col mb-[3%]">
+                    <label for class="text-white aroundow" style="font-size: 4.5vw;">
                         Olimpia: </label>
                     <button id="selectOlimpia"
-                        class=" h-8 rounded-lg bg-white border-2 border-black">Seleccionar</button>
+                        class=" h-[5vh] rounded-[3vw] bg-white border-[3px] border-black" style="font-size: 3.8vw;">Seleccionar</button>
                 </section>
                 <!--Greacia-->
                 <section class="flex flex-col">
-                    <label for class="text-white aroundow">
+                    <label for class="text-white aroundow" style="font-size: 4.5vw;">
                         Grecia: </label>
                     <button id="selectGrecia"
-                        class=" h-8 rounded-lg bg-white border-2 border-black">Seleccionar</button>
+                        class=" h-[5vh] rounded-[3vw] bg-white border-[3px] border-black" style="font-size: 3.8vw;">Seleccionar</button>
                 </section>
             </div>
             <section class="flex justify-center">
                 <button id="b-report"
-                    class="h-8 px-2 my-5 text-white bg-base rounded-lg border-2 border-black aroundow">
+                    class="h-[5vh] w-[33vw] px-2 my-[12%] text-white bg-base rounded-[3vw] border-[3px] border-black aroundow" style="font-size: 3.8vw;">
                     Generar Reporte</button>
             </section>
             <!--Modales-->
@@ -80,7 +85,7 @@
                         <div id="containerPrivadas" class="cRoom p-[3%] mt-[2%] w-[90vw] bg-white bg-opacity-70 border border-black rounded-lg">
                             <p id="txt-report-private" class="room text-center" style="font-size: 4vw; line-height: 1;">Habitaciones</p>
                             <div class="flex space-x-[1%] flex-wrap">
-                                <div id="Alejandria" class="h-[5v] w-[32%] mt-[2%] bg-in border-2 border-inBorder flex items-center rounded-lg">
+                                <div id="Alejandria" class="h-[5vh] w-[32%] mt-[2%] bg-in border-2 border-inBorder flex items-center rounded-lg">
                                     <p class="privada text-white w-[80%] txtshade text-center" style="font-size: 3.8vw;">Alejandria</p>
                                     <div class="h-[100%] w-[0.7%] bg-inBorder "></div>
                                     <div class="h-[100%] w-[20.3%] flex justify-center items-center">
@@ -288,11 +293,11 @@
                             <thead>
                                 <tr class="w-full bg-gray-600 text-gray-300">
                                     <th
-                                        class="w-1/3 border border-black border-collapse">Habitacion</th>
+                                        class="w-1/3 border border-black border-collapse tamano-m">Habitacion</th>
                                     <th
-                                        class="w-1/3 border border-black border-collapse">Huespedes</th>
+                                        class="w-1/3 border border-black border-collapse tamano-m">Huespedes</th>
                                     <th
-                                        class="w-1/3 border border-black border-collapse">Check-out</th>
+                                        class="w-1/3 border border-black border-collapse tamano-m">Check-out</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -300,112 +305,112 @@
                                     <td class="border border-black text-center">
                                         <div
                                             class="option mx-2 flex justify-between items-center">
-                                            <button value="0" id="btAlejandria" class="w-full h-14">Alejandria</button>
+                                            <button value="0" id="btAlejandria" class="w-full h-[6vh] tamano-m">Alejandria</button>
                                         </div>
                                     </td>
                                     <td class="border border-black text-center">
                                         <div
-                                            class="mx-4  flex justify-between items-center">
-                                            <label for="r1Alejandria">1 <input id="r1Alejandria" name="paxAlejandria" type="radio"
-                                                    class="align-middle"></label>
-                                            <label for="r2Alejandria">2 <input id="r2Alejandria" name="paxAlejandria" type="radio"
-                                                    class="align-middle"></label>
+                                            class="mx-[12%]  flex justify-between items-center">
+                                            <label for="r1Alejandria" class="tamano-m">1 <input id="r1Alejandria" name="paxAlejandria" type="radio"
+                                                    class="align-middle tamano-radio"></label>
+                                            <label for="r2Alejandria" class="tamano-m">2 <input id="r2Alejandria" name="paxAlejandria" type="radio"
+                                                    class="align-middle tamano-radio"></label>
                                         </div>
                                     </td>
                                     <td
                                         class="border border-black text-center text-center">
-                                        <input id="cbAlejandria" type="checkbox" class="align-middle">
+                                        <input id="cbAlejandria" type="checkbox" class="align-middle tamano-radio">
                                     </td>
                                 </tr>
                                 <tr id="trJacobo" class="bg-gray-300">
                                     <td class="border border-black text-center">
                                         <div
                                             class="option mx-2 flex justify-between items-center">
-                                            <button value="0" id="btJacobo" class="w-full h-14">Jacobo</button>
+                                            <button value="0" id="btJacobo" class="w-full h-[6vh] tamano-m">Jacobo</button>
                                         </div>
                                     </td>
                                     <td class="border border-black text-center">
                                         <div
                                             class="mx-4  flex justify-between items-center">
-                                            <label for="r1Jacobo">1 <input name="paxJacobo" id="r1Jacobo" type="radio"
-                                                    class="align-middle"></label>
-                                            <label for="r2Jacobo">2 <input name="paxJacobo" id="r2Jacobo" type="radio"
-                                                    class="align-middle"></label>
+                                            <label for="r1Jacobo" class="tamano-m">1 <input name="paxJacobo" id="r1Jacobo" type="radio"
+                                                    class="align-middle tamano-radio"></label>
+                                            <label for="r2Jacobo" class="tamano-m">2 <input name="paxJacobo" id="r2Jacobo" type="radio"
+                                                    class="align-middle tamano-radio"></label>
                                         </div>
                                     </td>
                                     <td
                                         class="border border-black text-center text-center">
-                                        <input id="cbJacobo" type="checkbox" class="align-middle">
+                                        <input id="cbJacobo" type="checkbox" class="align-middle tamano-radio">
                                     </td>
                                 </tr>
                                 <tr id="trLourdes" class="bg-gray-300">
                                     <td class="border border-black text-center">
                                         <div
                                             class="option mx-2 flex justify-between items-center">
-                                            <button value="0" id="btLourdes" class="w-full h-14">Lourdes</button>
+                                            <button value="0" id="btLourdes" class="w-full h-[6vh] tamano-m">Lourdes</button>
                                         </div>
                                     </td>
                                     <td class="border border-black text-center">
                                         <div
                                             class="mx-4  flex justify-between items-center">
-                                            <label for>1 <input name="paxLourdes" id="r1Lourdes" type="radio"
-                                                    class="align-middle"></label>
-                                            <label for>2 <input name="paxLourdes" id="r2Lourdes" type="radio"
-                                                    class="align-middle"></label>
+                                            <label for class="tamano-m">1 <input name="paxLourdes" id="r1Lourdes" type="radio"
+                                                    class="align-middle tamano-radio"></label>
+                                            <label for class="tamano-m">2 <input name="paxLourdes" id="r2Lourdes" type="radio"
+                                                    class="align-middle tamano-radio"></label>
                                         </div>
                                     </td>
                                     <td
                                         class="border border-black text-center text-center">
-                                        <input id="cbLourdes" type="checkbox" class="align-middle">
+                                        <input id="cbLourdes" type="checkbox" class="align-middle tamano-radio">
                                     </td>
                                 </tr>
                                 <tr id="trMacedonia" class="bg-gray-300">
                                     <td class="border border-black text-center">
                                         <div
                                             class="option mx-2 flex justify-between items-center">
-                                            <button value="0" id="btMacedonia" class="w-full h-14">Macedonia</button>
+                                            <button value="0" id="btMacedonia" class="w-full h-[6vh] tamano-m">Macedonia</button>
                                         </div>
                                     </td>
                                     <td class="border border-black text-center">
                                         <div
                                             class="mx-4  flex justify-between items-center">
-                                            <label for>1 <input name="paxMacedonia" id="r1Macedonia" type="radio"
-                                                    class="align-middle"></label>
-                                            <label for>2 <input name="paxMacedonia" id="r2Macedonia" type="radio"
-                                                    class="align-middle"></label>
+                                            <label for class="tamano-m">1 <input name="paxMacedonia" id="r1Macedonia" type="radio"
+                                                    class="align-middle tamano-radio"></label>
+                                            <label for class="tamano-m">2 <input name="paxMacedonia" id="r2Macedonia" type="radio"
+                                                    class="align-middle tamano-radio"></label>
                                         </div>
                                     </td>
                                     <td
                                         class="border border-black text-center text-center">
-                                        <input id="cbMacedonia" type="checkbox" class="align-middle">
+                                        <input id="cbMacedonia" type="checkbox" class="align-middle tamano-radio">
                                     </td>
                                 </tr>
                                 <tr id="trVita" class="bg-gray-300">
                                     <td class="border border-black text-center">
                                         <div
                                             class="option mx-2 flex justify-between items-center">
-                                            <button value="0" id="btVita" class="w-full h-14">Vita</button>
+                                            <button value="0" id="btVita" class="w-full h-[6vh] tamano-m">Vita</button>
                                         </div>
                                     </td>
                                     <td class="border border-black text-center">
                                         <div
                                             class="mx-4  flex justify-between items-center">
-                                            <label for>1 <input name="paxVita" id="r1Vita" type="radio"
-                                                    class="align-middle"></label>
-                                            <label for>2 <input name="paxVita" id="r2Vita" type="radio"
-                                                    class="align-middle"></label>
+                                            <label for class="tamano-m">1 <input name="paxVita" id="r1Vita" type="radio"
+                                                    class="align-middle tamano-radio"></label>
+                                            <label for class="tamano-m">2 <input name="paxVita" id="r2Vita" type="radio"
+                                                    class="align-middle tamano-radio"></label>
                                         </div>
                                     </td>
                                     <td
                                         class="border border-black text-center text-center">
-                                            <input id="cbVita" type="checkbox" class="align-middle">
+                                            <input id="cbVita" type="checkbox" class="align-middle tamano-radio">
                                     </td>        
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <button id="savePrivate"
-                            class="h-10 w-[35%] mt-3 bg-white border rounded-lg">Guardar</button>
+                            class="h-[5vh] w-[35%] mt-[3%] bg-gray-300 border-[3px] border-black rounded-lg tamano-m">Guardar</button>
                     </div>
                 </div>
                 <!--Alejandro-->
@@ -414,45 +419,45 @@
                     <div
                         class="w-full h-full flex flex-col justify-center items-center">
                         <div id="contentModal"
-                            class="w-[92vw] bg-white p-3 overflow-hidden border-2 border-black rounded-lg">
-                            <p class="text-center mt-3">Alejandro</p>
+                            class="w-[92vw] bg-white p-[4%] overflow-hidden border-2 border-black rounded-lg">
+                            <p class="text-center mt-3 tamano-m">Alejandro</p>
                             <section class="Habitaciones">
                                 <div class="flex justify-around mt-6">
                                     <button id="bt1Alejandro" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
+                                        class="w-[10vw] h-[5vh] tamano-m a bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
                                     <button id="bt2Alejandro" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
                                     <button id="bt3Alejandro" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
                                     <button id="bt4Alejandro" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">4</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">4</button>
                                     <button id="bt5Alejandro" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">5</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">5</button>
                                     <button id="bt6Alejandro" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">6</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">6</button>
                                     <button id="bt7Alejandro" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">7</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">7</button>
                                 </div>
                                 <div class="flex justify-around my-6">
                                     <button id="bt8Alejandro" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">8</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">8</button>
                                     <button id="bt9Alejandro" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">9</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">9</button>
                                     <button id="bt10Alejandro" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">10</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">10</button>
                                     <button id="bt11Alejandro" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">11</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">11</button>
                                     <button id="bt12Alejandro" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">12</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">12</button>
                                     <button id="bt13Alejandro" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">13</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">13</button>
                                     <button id="bt14Alejandro" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">14</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">14</button>
                                 </div>
                             </section>
                         </div>
                         <button id="saveAlejandro"
-                            class="h-10 w-[35%] mt-3 bg-white border rounded-lg">Guardar</button>
+                            class="h-[5vh] w-[35%] tamano-m bg-gray-300 mt-[3%] border-[3px] rounded-lg">Guardar</button>
                     </div>
                 </div>
                 <!--Filipo-->
@@ -461,45 +466,45 @@
                     <div
                         class="w-full h-full flex flex-col justify-center items-center">
                         <div id="contentModal"
-                            class="w-[92vw] bg-white p-3 overflow-hidden border-2 border-black rounded-lg">
-                            <p class="text-center mt-3">Filipo</p>
+                            class="w-[92vw] bg-white p-[4%] overflow-hidden border-2 border-black rounded-lg">
+                            <p class="text-center mt-3 tamano-m">Filipo</p>
                             <section class="Habitaciones">
                                 <div class="flex justify-around mt-6">
                                     <button id="bt1Filipo" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
                                     <button id="bt2Filipo" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
                                     <button id="bt3Filipo" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
                                     <button id="bt4Filipo" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">4</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">4</button>
                                     <button id="bt5Filipo" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">5</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">5</button>
                                     <button id="bt6Filipo" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">6</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">6</button>
                                     <button id="bt7Filipo" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">7</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">7</button>
                                 </div>
                                 <div class="flex justify-around my-6">
                                     <button id="bt8Filipo" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">8</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">8</button>
                                     <button id="bt9Filipo" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">9</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">9</button>
                                     <button id="bt10Filipo" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">10</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">10</button>
                                     <button id="bt11Filipo" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">11</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">11</button>
                                     <button id="bt12Filipo" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">12</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">12</button>
                                     <button id="bt13Filipo" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">13</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">13</button>
                                     <button id="bt14Filipo" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">14</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">14</button>
                                 </div>
                             </section>
                         </div>
                         <button id="saveFilipo"
-                            class="h-8 w-[35%] mt-3 bg-white border rounded-lg">Guardar</button>
+                            class="h-[5vh] w-[35%] tamano-m bg-gray-300 mt-[3%] border-[3px] rounded-lg">Guardar</button>
                     </div>
                 </div>
                 <!--Olimpia-->
@@ -508,27 +513,27 @@
                     <div
                         class="w-full h-full flex flex-col justify-center items-center">
                         <div id="contentModal"
-                            class="w-[92vw] bg-white p-3 overflow-hidden border-2 border-black rounded-lg">
-                            <p class="text-center mt-3">Olimpia</p>
+                            class="w-[92vw] bg-white p-[4%] overflow-hidden border-2 border-black rounded-lg">
+                            <p class="text-center mt-3 tamano-m">Olimpia</p>
                             <section class="Habitaciones">
                                 <div class="flex justify-around my-6">
                                     <button id="bt1Olimpia" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
                                     <button id="bt2Olimpia" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
                                     <button id="bt3Olimpia" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
                                     <button id="bt4Olimpia" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">4</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">4</button>
                                     <button id="bt5Olimpia" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">5</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">5</button>
                                     <button id="bt6Olimpia" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">6</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">6</button>
                                 </div>
                             </section>
                         </div>
                         <button id="saveOlimpia"
-                            class="h-8 w-[35%] mt-3 bg-white border rounded-lg">Guardar</button>
+                            class="h-[5vh] w-[35%] tamano-m bg-gray-300 mt-[3%] border-[3px] rounded-lg">Guardar</button>
                     </div>
                 </div>
                 <!--Grecia-->
@@ -537,35 +542,35 @@
                     <div
                         class="w-full h-full flex flex-col justify-center items-center">
                         <div id="contentModal"
-                            class="w-[92vw] bg-white p-3 overflow-hidden border-2 border-black rounded-lg">
-                            <p class="text-center mt-3">Grecia</p>
+                            class="w-[92vw] bg-white p-[4%] overflow-hidden border-2 border-black rounded-lg">
+                            <p class="text-center mt-3 tamano-m">Grecia</p>
                             <section class="Habitaciones">
                                 <div class="flex justify-around my-6">
                                     <button id="bt1dGrecia" value="0"
-                                        class="w-[100px] h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
+                                        class="w-[24vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
                                     <button id="bt2dGrecia" value="0"
-                                        class="w-[100px] h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
+                                        class="w-[24vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
                                     <button id="bt3dGrecia" value="0"
-                                        class="w-[100px] h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
+                                        class="w-[24vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
                                 </div>
                                 <div class="flex justify-around my-6">
                                     <button id="bt1Grecia" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">1</button>
                                     <button id="bt2Grecia" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">2</button>
                                     <button id="bt3Grecia" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">3</button>
                                     <button id="bt4Grecia" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">4</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">4</button>
                                     <button id="bt5Grecia" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">5</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">5</button>
                                     <button id="bt6Grecia" value="0"
-                                        class="w-10 h-10 bg-gray-300 border-2 border-gray-600 rounded-lg">6</button>
+                                        class="w-[10vw] h-[5vh] tamano-m bg-gray-300 border-2 border-gray-600 rounded-lg">6</button>
                                 </div>
                             </section>
                         </div>
                         <button id="saveGrecia"
-                            class="h-8 w-[35%] mt-3 bg-white border rounded-lg">Guardar</button>
+                            class="h-[5vh] w-[35%] tamano-m bg-gray-300 mt-[3%] border-[3px] rounded-lg">Guardar</button>
                     </div>
                 </div>
                 <!--Modales-->
