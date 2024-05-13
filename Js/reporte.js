@@ -1,6 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
+    totalIn = 0;
+    totalOut = 0;
+    
+    privadasIn = 0;
+    privadasOut = 0;
+
     const buttonReport = document.getElementById("b-report");
     const editarReporte = document.getElementById("editarReporte")
+
+    //Saldo en caja y huespedes
+    const saldoEnCaja = document.getElementById("saldoEnCaja")
+    const saldoEnCajaReport = document.getElementById("saldoEnCajaReport")
+    const huespedesIn = document.getElementById("huespedesIn")
+    const huespedesOut = document.getElementById("huespedesOut")
 
     //Elementos del reporte (Privadas) 
     const containerPrivadas = document.getElementById('containerPrivadas'); 
@@ -125,30 +137,37 @@ document.addEventListener('DOMContentLoaded', function() {
     //Alejandria
     const btAlejandria = document.getElementById("btAlejandria");
     const r1Alejandria = document.getElementById('r1Alejandria');
+    const r2Alejandria = document.getElementById('r2Alejandria');
     const huespedesAlejandria = document.getElementById("huespedesAlejandria");
     //Jacobo
     const btJacobo = document.getElementById("btJacobo");
     const r1Jacobo = document.getElementById('r1Jacobo');
+    const r2Jacobo = document.getElementById('r2Jacobo');
     const huespedesJacobo = document.getElementById("huespedesJacobo");
     //Lourdes
     const btLourdes = document.getElementById("btLourdes");
     const r1Lourdes = document.getElementById('r1Lourdes');
+    const r2Lourdes = document.getElementById('r2Lourdes');
     const huespedesLourdes = document.getElementById("huespedesLourdes");
     //Macedonia
     const btMacedonia = document.getElementById("btMacedonia");
     const r1Macedonia = document.getElementById('r1Macedonia');
+    const r2Macedonia = document.getElementById('r2Macedonia');
     const huespedesMacedonia = document.getElementById("huespedesMacedonia");
     //Vita
     const btVita = document.getElementById("btVita");
     const r1Vita = document.getElementById('r1Vita');
+    const r2Vita = document.getElementById('r2Vita');
     const huespedesVita = document.getElementById("huespedesVita");    
 
     editarReporte.addEventListener('click', function() {
-        //modalReport.classList.add('hidden');
+        modalReport.classList.add('hidden');
     });
 
     buttonReport.addEventListener('click', function() {
         modalReport.classList.remove('hidden');
+
+        saldoEnCajaReport.textContent = "$ " + saldoEnCaja.value;
 
         if(privadasOcupadas == 0){
             txtPrivada.style.display = 'none';
@@ -157,52 +176,101 @@ document.addEventListener('DOMContentLoaded', function() {
         //Alejandria
         if(r1Alejandria.checked){
             huespedesAlejandria.textContent = "1";
+            privadasIn += 1;
+        } else if(r2Alejandria.checked) {
+            privadasIn += 2; 
         }        
         if(btAlejandria.value == 0){
             Alejandria.style.display = 'none';
         }else if(btAlejandria.value == 2){
             Alejandria.classList.remove('bg-in');
-            Alejandria.classList.add('bg-out');
+            Alejandria.classList.add('bg-out');  
+            //saber cuantas personas salen de privada
+            if(r1Alejandria.checked){
+                privadasOut += 1;
+            } else {
+                privadasOut += 2; 
+            }  
         }
         //Jacobo
         if(r1Jacobo.checked){
             huespedesJacobo.textContent = "1";
-        }  
+            privadasIn += 1;
+        } else if(r2Jacobo.checked){
+            privadasIn += 2;
+        }
+
         if(btJacobo.value == 0){
             Jacobo.style.display = 'none';
         } else if(btJacobo.value == 2){
             Jacobo.classList.remove('bg-in');
             Jacobo.classList.add('bg-out');
+            //saber cuantas personas salen
+            if(r1Jacobo.checked){
+                privadasOut += 1;
+            } else {
+                privadasOut += 2;
+            }
         }  
         //Lourdes
         if(r1Lourdes.checked){
             huespedesLourdes.textContent = "1";
-        }  
+            privadasIn += 1;
+        } else if(r2Lourdes.checked){
+            privadasIn += 2;
+        } 
+
         if(btLourdes.value == 0){
             Lourdes.style.display = 'none';
         } else if(btLourdes.value == 2){
             Lourdes.classList.remove('bg-in');
             Lourdes.classList.add('bg-out');
+            //saber cuantass personas salen
+            if(r1Lourdes.checked){
+                privadasOut += 1;
+            } else {
+                privadasOut += 2;
+            } 
         }        
         //Macedonia
         if(r1Macedonia.checked){
             huespedesMacedonia.textContent = "1";
-        }          
+            privadasIn += 1;
+        } else if(r2Macedonia.checked){
+            privadasIn += 2;
+        }     
+
         if(btMacedonia.value == 0){
             Macedonia.style.display = 'none';
         } else if(btMacedonia.value == 2){
             Macedonia.classList.remove('bg-in');
             Macedonia.classList.add('bg-out');
+            //saber cuantas personas salen 
+            if(r1Macedonia.checked){
+                privadasOut += 1;
+            } else {
+                privadasOut += 2;
+            }  
         }   
         //Vita
         if(r1Vita.checked){
             huespedesVita.textContent = "1";
+            privadasIn += 1;
+        } else if(r2Vita.checked){
+            privadasIn += 2;
         }          
+
         if(btVita.value == 0){
             Vita.style.display = 'none';
         } else if(btVita.value == 2){
             Vita.classList.remove('bg-in');
             Vita.classList.add('bg-out');
+            //saber cuantas personas salen
+            if(r1Vita.checked){
+                privadasOut += 1;
+            } else {
+                privadasOut += 2;
+            }  
         }   
         
         //Compartidas (Alejandro)
@@ -486,6 +554,14 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if(bt6Grecia.value == 2){
             greciaBed6.classList.remove('bg-in');
             greciaBed6.classList.add('bg-out');            
-        }        
+        }    
+        
+        //Logica de huesped adentro y salida
+        totalIn = privadasIn + AlejandroIn + FilipoIn + OlimpiaIn + GreciaIn;
+        totalOut = privadasOut + AlejandroOut + FilipoOut + OlimpiaOut + GreciaOut;
+
+        huespedesIn.textContent = totalIn;
+        huespedesOut.textContent = totalOut;
+        console.log(saldoEnCaja.textContent)
     }); 
 });

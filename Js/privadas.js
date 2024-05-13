@@ -225,7 +225,6 @@ document.addEventListener('DOMContentLoaded', function() {
             cbVita.disabled = false;
             r1Vita.disabled = false;
             r2Vita.disabled = false;
-            console.log(privadasOcupadas);
         } else {
             privadasOcupadas -= 1;
             r2Vita.checked = false;
