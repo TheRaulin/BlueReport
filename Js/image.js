@@ -19,9 +19,9 @@ document.getElementById('finalizar').addEventListener('click', function() {
     const containerSaldo = document.getElementById('containerSaldo');
     //saldo caja texto
     const saldoEnCajaReport = document.getElementById('saldoEnCajaReport');
+    //texto reporte turno recepcion
 
         txtBlue.classList.add('mt-[-2vh]');
-        txtReport.classList.add('mt-[2vh]');
 
 
         bedsElements.forEach(function(element) {
