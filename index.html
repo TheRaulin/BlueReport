@@ -74,7 +74,7 @@
             </section>
             <!--Modales-->
             <!--reporte-->
-            <div  id="modalReport" class="absolute  min-full-screen bluefondo">
+            <div  id="modalReport" class="absolute hidden min-full-screen bluefondo">
                 <div id="content" class="flex flex-col items-center pb-[3%]">
                     <img style="height: 17vh;" src="Styles/Images/logo.webp" alt="logo">
                     <h1 id="txtBlue" class="text-white txtshade" style="font-size: 8vw; line-height: 1;">The Blue House
@@ -95,10 +95,10 @@
                                 <p class="room text-center" style="font-size: 4vw; line-height: 1;">Huespedes</p>
                                 <div class="h-[4vh] w-[80%] mt-[2%] overflow-hidden border-2 border-inBorder flex items-center rounded-lg">
                                     <div class="w-[50%] h-[100%] flex justify-center items-center bg-in border-r-[1px] border-inBorder" style="font-size: 3.8vw;">
-                                        <p class="huespedesIn text-white aroundow">32</p>
+                                        <p id="huespedesIn" class="huespedesIn text-white aroundow">32</p>
                                     </div>
                                     <div class="w-[50%] h-[100%] flex justify-center items-center bg-out border-l-[1px] border-inBorder" style="font-size: 3.8vw;">
-                                        <p class="huespedesOut text-white aroundow">38</p>
+                                        <p id="huespedesOut" class="huespedesOut text-white aroundow">38</p>
                                     </div>
                                 </div>
                             </div>
@@ -300,8 +300,8 @@
                     <div class="bg-gray-400 mt-[3%] h-[3px] w-[90vw] rounded-lg"></div>                                                                    
                 </div>
                 <div class="flex justify-around mt-[3%] mb-[6%]">
-                    <button id="finalizar" class="h-[5vh] w-[35%] bg-blue-500 rounded-lg text-white txtshade" style="font-size: 4.2vw;">Finalizar</button>
-                    <button id="editarReporte" class="h-[5vh] w-[35%] bg-green-500 rounded-lg text-white txtshade" style="font-size: 4.2vw;">Editar</button>
+                    <button id="finalizar" class="h-[5vh] w-[50%] bg-blue-500 rounded-lg text-white txtshade" style="font-size: 4.2vw;">Finalizar</button>
+                    <!--<button id="editarReporte" class="h-[5vh] w-[35%] bg-green-500 rounded-lg text-white txtshade" style="font-size: 4.2vw;">Editar</button>-->
                 </div>
             </div>
             <!--Privadas-->

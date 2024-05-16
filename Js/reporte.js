@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     privadasOut = 0;
 
     const buttonReport = document.getElementById("b-report");
-    const editarReporte = document.getElementById("editarReporte")
+    //const editarReporte = document.getElementById("editarReporte")
 
     //Saldo en caja y huespedes
     const saldoEnCaja = document.getElementById("saldoEnCaja")
@@ -160,9 +160,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const r2Vita = document.getElementById('r2Vita');
     const huespedesVita = document.getElementById("huespedesVita");    
 
-    editarReporte.addEventListener('click', function() {
+    /*editarReporte.addEventListener('click', function() {
         modalReport.classList.add('hidden');
-    });
+    });*/
 
     buttonReport.addEventListener('click', function() {
         modalReport.classList.remove('hidden');
@@ -559,8 +559,9 @@ document.addEventListener('DOMContentLoaded', function() {
         //Logica de huesped adentro y salida
         totalIn = privadasIn + AlejandroIn + FilipoIn + OlimpiaIn + GreciaIn;
         totalOut = privadasOut + AlejandroOut + FilipoOut + OlimpiaOut + GreciaOut;
-
+        console.log(totalIn)
         huespedesIn.textContent = totalIn;
         huespedesOut.textContent = totalOut;
+        
     }); 
 });
