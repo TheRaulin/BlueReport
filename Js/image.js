@@ -12,12 +12,20 @@ document.getElementById('finalizar').addEventListener('click', function() {
     //Texto encabecado
     const txtBlue = document.getElementById('txtBlue');
     const txtReport = document.getElementById('txtReport');
+    //Texto de huespedes y caja
+    const huespedesIns = document.querySelectorAll('.huespedesIn');
+    const huespedesOuts = document.querySelectorAll('.huespedesOut');
+    //container de saldo defectuoso
+    const containerSaldo = document.getElementById('containerSaldo');
+    //saldo caja texto
+    const saldoEnCajaReport = document.getElementById('saldoEnCajaReport');
 
         txtBlue.classList.add('mt-[-2vh]');
-        txtReport.classList.add('mb-[2vh]');
+        txtReport.classList.add('mt-[2vh]');
+
 
         bedsElements.forEach(function(element) {
-                element.classList.add('mt-[-50%]');
+            element.classList.add('mt-[-50%]');
         });     
 
         rooms.forEach(function(room) {
@@ -34,7 +42,15 @@ document.getElementById('finalizar').addEventListener('click', function() {
 
         privadas.forEach(function(privada) {
             privada.classList.add('mt-[-2.1vh]');
-        });                   
+        });  
+        
+        huespedesIns.forEach(function(huespedesIn) {
+            huespedesIn.classList.add('mt-[-2.1vh]');
+        }); 
+
+        huespedesOuts.forEach(function(huespedesOut) {
+            huespedesOut.classList.add('mt-[-2.1vh]');
+        });        
         
     const content = document.getElementById('content');    
     content.classList.add('bluefondo');

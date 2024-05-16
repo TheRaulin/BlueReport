@@ -562,6 +562,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
         huespedesIn.textContent = totalIn;
         huespedesOut.textContent = totalOut;
-        console.log(saldoEnCaja.textContent)
     }); 
 });

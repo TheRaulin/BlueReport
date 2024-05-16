@@ -84,19 +84,21 @@
                         <!--Container saldo y huespedes-->
                         <div id="containerSaldo" class="flex cRoom p-[3%] mt-[2%] w-[90vw] bg-white bg-opacity-70 border border-black rounded-lg">
                             <div class="w-[50%] flex flex-col items-center">
-                                <p class="text-center" style="font-size: 4vw; line-height: 1;">Saldo caja</p>
-                                <div class="w-[80%] mt-[2%] h-[4vh] bg-blue-500 rounded-lg border border-black text-center" style="font-size: 3.8vw;">
-                                    <p id="saldoEnCajaReport" class="text-gray-200 aroundow text-center mt-[3%]">$ 278.000</p>
+                                <div>
+                                    <p class="text-center" style="font-size: 4vw; line-height: 1;">Saldo caja</p>
+                                </div>
+                                <div id="containerSaldo" class="h-[4vh] w-[80%] mt-[5.5%] bg-blue-500 border-2 border-black rounded-lg">
+                                    <p id="saldoEnCajaReport" class="text-gray-200 text-center aroundow" style="font-size: 3.8vw;">$ 278.000</p>
                                 </div>
                             </div>
                             <div class="w-[50%] flex flex-col items-center">
                                 <p class="room text-center" style="font-size: 4vw; line-height: 1;">Huespedes</p>
                                 <div class="h-[4vh] w-[80%] mt-[2%] overflow-hidden border-2 border-inBorder flex items-center rounded-lg">
-                                    <div class="w-[50%] h-[100%] bg-in border-r-[1px] border-inBorder" style="font-size: 3.8vw;">
-                                        <p id="huespedesIn" class="text-center text-white aroundow mt-[3%]">32</p>
+                                    <div class="w-[50%] h-[100%] flex justify-center items-center bg-in border-r-[1px] border-inBorder" style="font-size: 3.8vw;">
+                                        <p class="huespedesIn text-white aroundow">32</p>
                                     </div>
-                                    <div class="w-[50%] h-[100%] bg-out border-l-[1px] border-inBorder" style="font-size: 3.8vw;">
-                                        <p id="huespedesOut" class="text-center text-white aroundow mt-[3%]">38</p>
+                                    <div class="w-[50%] h-[100%] flex justify-center items-center bg-out border-l-[1px] border-inBorder" style="font-size: 3.8vw;">
+                                        <p class="huespedesOut text-white aroundow">38</p>
                                     </div>
                                 </div>
                             </div>
