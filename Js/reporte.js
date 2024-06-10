@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         //Compartidas (Alejandro)
         if(AlejandroIn == 0){
-            //containerAlejandro.style.display = 'none';
+            containerAlejandro.style.display = 'none';
         }
 
         if(bt1Alejandro.value == 0){
