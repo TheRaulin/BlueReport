@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    AlejandroIn = 0;
+    AlejandroIn = 2;
     AlejandroOut = 0;
 
 
