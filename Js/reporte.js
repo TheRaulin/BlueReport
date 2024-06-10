@@ -321,7 +321,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alejandroBed7.classList.add('bg-out');            
         }   
         if(bt8Alejandro.value == 0){
-            alejandroBed8.style.display = 'none';
+            //alejandroBed8.style.display = 'none';
         } else if(bt8Alejandro.value == 2){
             alejandroBed8.classList.remove('bg-in');
             alejandroBed8.classList.add('bg-out');            
@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alejandroBed9.classList.add('bg-out');            
         }    
         if(bt10Alejandro.value == 0){
-            alejandroBed10.style.display = 'none';
+            //alejandroBed10.style.display = 'none';
         } else if(bt10Alejandro.value == 2){
             alejandroBed10.classList.remove('bg-in');
             alejandroBed10.classList.add('bg-out');            
