@@ -279,13 +279,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if(bt1Alejandro.value == 0){
-            alejandroBed1.style.display = 'none';  
+            //alejandroBed1.style.display = 'none';  
         } else if(bt1Alejandro.value == 2){
             alejandroBed1.classList.remove('bg-in');
             alejandroBed1.classList.add('bg-out');            
         }
         if(bt2Alejandro.value == 0){
-            alejandroBed2.style.display = 'none';
+            //alejandroBed2.style.display = 'none';
         } else if(bt2Alejandro.value == 2){
             alejandroBed2.classList.remove('bg-in');
             alejandroBed2.classList.add('bg-out');            
